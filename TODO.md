@@ -1,0 +1,1 @@
+# let's also add keyword from part06.xml, I guess keyword and name are different (says docstring in pydicom generate_dicom_dict.py)

@@ -1,12 +1,9 @@
 from pydicom.tag import BaseTag, Tag
 import re
 from typing import Dict
-from pydicom.datadict import dictionary_VR
+from src.shrub._dicom_dict import DicomDictionary
 
 
-
-# maps the DICOM standard's actual Option name (per PS3.15 section E.3) to
-# the corresponding key in a row dict
 MODE_NAMES = {
     "retain_safe_private_option": "rtn_safe_priv",
     "retain_uids_option": "rtn_uids",
@@ -20,27 +17,30 @@ MODE_NAMES = {
     "clean_graphics_option": "clean_graph",
 }
 
-class StandardTag():
-    def __init__(self,item: dict):
-        self.tag = self.parse_tag(item['tag'])
-        self.vr = item['vr']
-        print(self.vr)
-        self.name = item['name']
+PROFILE_COLUMNS = [
+    "name", "retd", "std_comp_iod", "basic_profile", "rtn_safe_priv",
+    "rtn_uids", "rtn_dev_id", "rtn_inst_id", "rtn_pat_chars",
+    "rtn_long_full_dates", "rtn_long_modif_dates", "clean_desc",
+    "clean_struct_cont", "clean_graph",
+]
 
-        # action to perform for said tag, can be overwritten by mode specific action
+
+class StandardTag():
+    def __init__(self, key: int, value: tuple):
+        self.tag = Tag(key)
+        self.vr = DicomDictionary[key][0]
+        item = dict(zip(PROFILE_COLUMNS, value))
+        self.name = item['name']
         self.action = item['basic_profile']
         self.modes = self.parse_modes(item)
-        
 
-
-    def parse_tag(self,tag_str: str) -> Tag:
-        group, element = tag_str.strip("()").split(",")
-        return Tag(int(group, 16), int(element, 16))
-
-    def parse_modes(self,item: dict) -> dict:
+    def parse_modes(self, item: dict) -> dict:
         modes = {mode: item.get(mode) for mode in MODE_NAMES.values() if item.get(mode)}
         return modes
-        
+
+    def as_dict(self):
+        return self.__dict__
+
     def matches(self, tag: Tag) -> bool:
         return self.tag == tag
 
@@ -49,42 +49,40 @@ class StandardTag():
 
 
 class WildcardTag(StandardTag):
-    def __init__(self, item: dict):
-        # skip StandardTag.__init__ entirely, self.parse_tag can't handle
-        # a wildcard shape, everything below is set independently instead
-        self.group_mask, self.group_value, self.element = self.parse_wildcard_shape(item['tag'])
+    def __init__(self, key: str, value: tuple):
+        self.group_mask, self.group_value, self.element = self.parse_wildcard_shape(key)
+        item = dict(zip(PROFILE_COLUMNS, value))
         self.name = item['name']
         self.action = item['basic_profile']
-        self.modes = self.parse_modes(item)  # reused from StandardTag, unchanged
- 
-    def parse_wildcard_shape(self, tag_str: str) -> tuple[int, int, int | None]:
-        match = re.match(r'\(([0-9A-Fa-fx]{4}),([0-9A-Fa-fx]{4})\)', tag_str)
-        group_str, element_str = match.groups()
+        self.modes = self.parse_modes(item)
+
+    def parse_wildcard_shape(self, key: str) -> tuple[int, int, int | None]:
+        group_str, element_str = key[:4], key[4:]
         group_mask = int(''.join('0' if c == 'x' else 'F' for c in group_str), 16)
         group_value = int(group_str.replace('x', '0'), 16)
         element = None if element_str == 'xxxx' else int(element_str, 16)
         return group_mask, group_value, element
- 
+
     def matches(self, tag: Tag) -> bool:
         group_matches = (tag.group & self.group_mask) == self.group_value
         if not group_matches:
             return False
         return self.element is None or tag.element == self.element
- 
 
 
 class SafePrivateTag:
-    def __init__(self, group: int, element_low: int, row: dict):
-        self.group = group
-        self.element_low = element_low
-        self.row = row
-
-    @classmethod
-    def from_row(cls, row: dict) -> "SafePrivateTag":
-        ...
+    def __init__(self, key: tuple, value: tuple):
+        tag_str, self.private_creator = key
+        self.group = int(tag_str[:4], 16)
+        self.element_low = int(tag_str[6:8], 16)
+        self.vr, self.vm, self.meaning = value
 
     def matches(self, tag: Tag, private_creator: str) -> bool:
-        ...
+        return (
+            tag.group == self.group
+            and (tag.element & 0xFF) == self.element_low
+            and private_creator == self.private_creator
+        )
 
 
 class TagList:
@@ -95,34 +93,42 @@ class TagList:
         self.wildcard = []
 
     def add_tag(self, tag):
-
         matched = [tag.modes[mode] for mode in self.enabled_modes if mode in tag.modes]
 
         if len(set(matched)) > 1:
             raise ValueError(f'{tag.name}: enabled modes disagree, got {matched}')
 
         if matched:
-            tag.action = matched[0]  # overwrite directly, no separate trump_action
+            tag.action = matched[0]
 
-        if tag.action == 'K':
-            return
-        
         self.all_tags.append(tag)
         if isinstance(tag, WildcardTag):
             self.wildcard.append(tag)
         else:
             self.standard.append(tag)
 
-
     def get_all_actions(self) -> dict:
-
+        """Return all unique actions in the taglist"""
         all_actions = set()
-
         for tag in self.all_tags:
             all_actions.add(tag.get_action())
-
         return all_actions
 
-    
+    def get_tags_with_mode(self, mode: str) -> list:
+        """Return all tags of a given mode"""
+        mode_key = MODE_NAMES[mode]
+        return [tag for tag in self.all_tags if mode_key in tag.modes]
 
+    def drop_tags_with_keeps(self) -> None:
+        self.all_tags = [tag for tag in self.all_tags if tag.action != "K"]
+        self.standard = [tag for tag in self.standard if tag.action != "K"]
+        self.wildcard = [tag for tag in self.wildcard if tag.action != "K"]
 
+    def find_tag(self, tag: Tag):
+        for standard_tag in self.standard:
+            if standard_tag.matches(tag):
+                return standard_tag
+        for wildcard_tag in self.wildcard:
+            if wildcard_tag.matches(tag):
+                return wildcard_tag
+        return None

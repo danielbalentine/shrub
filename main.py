@@ -1,42 +1,64 @@
 
-from dicom_tables import load_dicom_tables, refresh_dicom_tables
 
 from pydicom.tag import Tag
-from tags import WildcardTag,SafePrivateTag,StandardTag, TagList
+from src.shrub.tags import WildcardTag,SafePrivateTag,StandardTag, TagList
+from src.shrub._phi_dict import BasicProfileTags, WildcardTags
 
 from pathlib import Path
 import sys
+import pandas as pd
 
-from helmer_tags import *
+from helmer_tags import (
+    MARKVCID_MRI_CT_PHI_TAGS,
+    MARKVCID_MRI_CT_MUST_REMOVE_TAGS,
+    MARKVCID_MRI_CT_RECHECK_TAGS,
+    DISCOVERY_MRI_CT_PHI_TAGS,
+    DISCOVERY_MRI_CT_MUST_REMOVE_TAGS,
+    DISCOVERY_MRI_CT_RECHECK_TAGS,
+)
 
 
-
-def compare_to_our_tags():
+def compare_to_our_tags(taglist):
     
-    pass
+    in_markvcid_not_in_standard = []
+    in_standard_not_in_markvcid = []
+    markvcid_list = MARKVCID_MRI_CT_PHI_TAGS + MARKVCID_MRI_CT_MUST_REMOVE_TAGS
+
+    markvcid_phi_tags = [Tag(tag) for tag in markvcid_list]
+    for tag in markvcid_phi_tags:
+        tag = Tag(tag)
+        print(tag)
+        if taglist.find_tag(tag) == None:
+            in_markvcid_not_in_standard.append(tag)
+
+    for tag in taglist.standard:
+        if tag.tag not in markvcid_phi_tags:
+            in_standard_not_in_markvcid.append(tag.as_dict())
+
+    print(in_standard_not_in_markvcid)
+
+    df = pd.DataFrame(in_standard_not_in_markvcid)
+    print(df)
+
+    df.to_csv('tags_in_standard_not_markvcid.csv', index=False)
+
+
 
 def main():
-
-    # use refresh to pull a new version of the tables from nema
-    refresh_dicom_tables()
-
-    tables = load_dicom_tables()
 
 
     helmer_modes = ["retain_uids_option","retain_device_identity_option"]
     taglist = TagList(helmer_modes)
 
-    basic_profile_tags = []
+    
 
-    for item in tables.basic_profile_tags:
-        if 'x' in item['tag']:
-            taglist.add_tag(WildcardTag(item))
-        else:
-            taglist.add_tag(StandardTag(item))
+    for key,value in BasicProfileTags.items():
+        taglist.add_tag(StandardTag(key,value))
 
-    print(taglist.get_all_actions())
+    # drop all keeps for comparison
+    taglist.drop_tags_with_keeps()
 
-
+    compare_to_our_tags(taglist)
     
 
 
