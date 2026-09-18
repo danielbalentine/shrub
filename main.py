@@ -50,7 +50,8 @@ def compare_to_our_tags(taglist):
 def main():
 
 
-    helmer_modes = ["retain_uids_option","retain_device_identity_option","retain_longitudinal_temporal_information_with_full_dates_option"]
+    #helmer_modes = ["retain_uids_option","retain_device_identity_option","retain_longitudinal_temporal_information_with_full_dates_option"]
+    helmer_modes = ["retain_uids_option","retain_device_identity_option","retain_longitudinal_temporal_information_with_modified_dates_option"]
     taglist = TagList(helmer_modes)
 
     
@@ -58,14 +59,14 @@ def main():
     for key,value in BasicProfileTags.items():
         taglist.add_tag(StandardTag(key,value))
 
+    print(taglist.get_all_actions())
     # drop all keeps for comparison
     taglist.drop_tags_with_keeps()
 
     compare_to_our_tags(taglist)
     
-    replace_empty = ActionCode('Z')
 
-    print()
+
 
 
 if __name__ == "__main__":

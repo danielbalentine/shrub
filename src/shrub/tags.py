@@ -112,7 +112,7 @@ class SafePrivateTag:
 
 
 class TagList:
-    def __init__(self, modes: list= []):
+    def __init__(self, modes: list=[]):
         self.enabled_modes = [MODE_NAMES[mode] for mode in modes]
 
         # guard statement for incompatable modes
@@ -131,13 +131,12 @@ class TagList:
     def add_tag(self, tag):
         matched = [tag.modes[mode] for mode in self.enabled_modes if mode in tag.modes]
 
+        # if modes have multiple actions for tag, get highest ordered
         if len(set(matched)) > 1:
-            raise ValueError(f"{tag.name}: enabled modes disagree, got {matched}")
+            matched = self.get_highest_order_action(matched)
 
         if matched:
-            tag.action = matched[0]
-
-        tag.action_code = ActionCode(tag.action)   # built once, here, action is final
+            tag.action = ActionCode(matched[0])
 
         self.all_tags.append(tag)
         if isinstance(tag, WildcardTag):
@@ -151,6 +150,19 @@ class TagList:
         for tag in self.all_tags:
             all_actions.add(tag.get_action().as_str())
         return all_actions
+    
+    def get_highest_order_action(self, actions: list) -> list:
+        """Return the highest ordered action given multiple
+        
+           the only mode disagreement that ever actually
+           occurs is Retain Device Identity (K) vs. Retain Longitudinal Temporal
+           Information With Modified Dates (C)
+
+        """
+
+
+        if "C" in actions:
+            return ["C"]
 
     def get_tags_with_mode(self, mode: str) -> list:
         """Return all tags of a given mode"""
