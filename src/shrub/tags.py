@@ -2,6 +2,7 @@ from pydicom.tag import BaseTag, Tag
 import re
 from typing import Dict
 from src.shrub._dicom_dict import DicomDictionary
+from src.shrub.action_codes import ActionCode
 
 """REG MODES
 
@@ -51,7 +52,7 @@ class StandardTag:
         self.vr = DicomDictionary[key][0]
         item = dict(zip(PROFILE_COLUMNS, value))
         self.name = item["name"]
-        self.action = item["basic_profile"]
+        self.action = ActionCode(item["basic_profile"])
         self.modes = self.parse_modes(item)
 
     def parse_modes(self, item: dict) -> dict:
@@ -68,6 +69,9 @@ class StandardTag:
 
     def get_action(self):
         return self.action
+
+    def apply(self, dataset):
+        return self.action.apply(dataset,self.tag,self.vr)
 
 
 class WildcardTag(StandardTag):
@@ -108,7 +112,7 @@ class SafePrivateTag:
 
 
 class TagList:
-    def __init__(self, modes: list):
+    def __init__(self, modes: list= []):
         self.enabled_modes = [MODE_NAMES[mode] for mode in modes]
 
         # guard statement for incompatable modes
@@ -133,6 +137,8 @@ class TagList:
         if matched:
             tag.action = matched[0]
 
+        tag.action_code = ActionCode(tag.action)   # built once, here, action is final
+
         self.all_tags.append(tag)
         if isinstance(tag, WildcardTag):
             self.wildcard.append(tag)
@@ -143,7 +149,7 @@ class TagList:
         """Return all unique actions in the taglist"""
         all_actions = set()
         for tag in self.all_tags:
-            all_actions.add(tag.get_action())
+            all_actions.add(tag.get_action().as_str())
         return all_actions
 
     def get_tags_with_mode(self, mode: str) -> list:

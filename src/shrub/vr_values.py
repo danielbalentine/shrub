@@ -13,6 +13,8 @@ DS, SL, SS, SV, UL, US, UV) or the other binary VRs (OD, OF, OL, OV, OW)
 appear on any D-action tag, so they're deliberately left out rather than
 carried as unverified dead code.
 """
+
+from pydicom.sequence import Sequence
  
 VR_DUMMY_VALUES = {
     'AE': 'ANONYMIZED',                    # <=16 bytes -- e.g. Destination AE
@@ -33,6 +35,20 @@ VR_DUMMY_VALUES = {
     'UT': 'ANONYMIZED',                    # unlimited text -- Selector UT Value
 }
  
+
+VR_EMPTY_VALUES = {
+    # text / string-ish
+    'AE': '', 'AS': '', 'CS': '', 'DA': '', 'DT': '', 'LO': '', 'LT': '',
+    'PN': '', 'SH': '', 'ST': '', 'TM': '', 'UC': '', 'UI': '', 'UR': '', 'UT': '',
+    # binary
+    'OB': b'', 'OD': b'', 'OF': b'', 'OL': b'', 'OV': b'', 'OW': b'', 'UN': b'',
+    # numeric -- absence is None, not 0 or ''
+    'DS': None, 'FL': None, 'FD': None, 'IS': None,
+    'SL': None, 'SS': None, 'SV': None, 'UL': None, 'US': None, 'UV': None,
+    # sequence -- Type 2 permits zero Items, but the value is still a Sequence
+    'SQ': Sequence([]),
+}
+
 # these two VRs appear on D-action tags but cannot get a flat dummy value
 # the same way -- each needs its own dedicated logic, not a lookup
 VR_NEEDS_SPECIAL_HANDLING = {

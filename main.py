@@ -63,6 +63,9 @@ def main():
 
     compare_to_our_tags(taglist)
     
+    replace_empty = ActionCode('Z')
+
+    print()
 
 
 if __name__ == "__main__":
