@@ -3,7 +3,7 @@
 from pydicom.tag import Tag
 from src.shrub.tags import WildcardTag,SafePrivateTag,StandardTag, TagList
 from src.shrub._phi_dict import BasicProfileTags, WildcardTags
-
+from src.shrub._dicom_dict import DicomDictionary
 from pathlib import Path
 import sys
 import pandas as pd
@@ -27,27 +27,30 @@ def compare_to_our_tags(taglist):
     markvcid_phi_tags = [Tag(tag) for tag in markvcid_list]
     for tag in markvcid_phi_tags:
         tag = Tag(tag)
-        print(tag)
         if taglist.find_tag(tag) == None:
-            in_markvcid_not_in_standard.append(tag)
+            
+            value = DicomDictionary.get(tag)
+            if value:
+                tag = [str(tag),value[2]]
+            in_markvcid_not_in_standard.append(str(tag))
 
     for tag in taglist.standard:
         if tag.tag not in markvcid_phi_tags:
             in_standard_not_in_markvcid.append(tag.as_dict())
 
-    print(in_standard_not_in_markvcid)
 
     df = pd.DataFrame(in_standard_not_in_markvcid)
-    print(df)
 
     df.to_csv('tags_in_standard_not_markvcid.csv', index=False)
 
+    df = pd.DataFrame(in_markvcid_not_in_standard)
+    df.to_csv('tags_in_markvcid_not_in_standard.csv', index=False)
 
 
 def main():
 
 
-    helmer_modes = ["retain_uids_option","retain_device_identity_option"]
+    helmer_modes = ["retain_uids_option","retain_device_identity_option","retain_longitudinal_temporal_information_with_full_dates_option"]
     taglist = TagList(helmer_modes)
 
     
