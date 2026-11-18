@@ -51,6 +51,5 @@ Development runs in podman containers.
 
 - `./utils/build.sh` builds the `localhost/shrub-dev` image from `Containerfile` (Python + pinned `requirements-dev.txt`, no code). Rebuild only when those two files change.
 - `./utils/generate_dicts.sh` regenerates all `src/shrub/_*.py` dicts inside the `localhost/shrub-dev` container (repo bind-mounted at `/shrub`), running `generate_dicom_dict.py` then `generate_phi_dict.py`. Review the output with `git diff`.
-
-<!-- TODO: running tests, running a single test -->
+- `./utils/test.sh` runs all of `tests/` in the container. Arguments pass straight to pytest, e.g. `./utils/test.sh tests/test_data_invariants.py` or `./utils/test.sh tests/test_action_codes.py::TestActionCodes::<name> -v`.
 
