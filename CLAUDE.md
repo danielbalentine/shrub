@@ -30,3 +30,27 @@ Please refer to STANDARD.md for more technical and specific context.
 ## Dictionary Generation
 1. generate_dicom_dict.py & other generator scripts should write the version of the standard into the doc strings of the dictionary files (ex. dicom_dict.py, _phi_dict.py)
 
+## Generator Data Flow
+The `_*.py` dictionaries in `src/shrub/` are generated. Never hand-edit them; change the generator and regenerate.
+
+| Script | Reads (DocBook XML) | Writes | Dicts |
+|---|---|---|---|
+| `utils/generate_dicom_dict.py` | PS3.6 `part06.xml`: Registry of DICOM Data Elements, File Meta Elements, Directory Structuring Elements. PS3.7 `part07.xml`: Command Fields, Retired Command Fields | `_dicom_dict.py` | `DicomDictionary` (int tag keys), `RepeatersDictionary` (string keys like `"50xx0022"`) |
+| `utils/generate_phi_dict.py` | PS3.15 `part15.xml`: `table_E.1-1` (per-attribute action table) | `_phi_dict.py` | `BasicProfileTags` (int tag keys), `WildcardTags` (string keys like `"50xxxxxx"`) |
+| `utils/generate_phi_dict.py` | PS3.15 `part15.xml`: `table_E.3.10-1` (Retain Safe Private list) | `_safe_private_dict.py` | `SafePrivateTags` (keyed on `(tag, private_creator)`) |
+
+- Both scripts download from `dicom.nema.org/.../current` by default, or take `--local`.
+- Both read the edition from the XML `<subtitle>` (e.g. "DICOM PS3.6 2026d - ..."), write it into the generated file's docstring, and warn if it differs from `__dicom_version__` in `src/shrub/_version.py`.
+- Run `generate_dicom_dict.py` first: `generate_phi_dict.py` cross-checks every `BasicProfileTags` key against `_dicom_dict.py`.
+- After regenerating, run `tests/test_data_invariants.py`. It checks that the shape of the standard the code depends on hasn't changed.
+- Downstream: `tags.py` (`StandardTag`, `TagList`) and `action_codes.py` (`ActionCode`) consume these dicts.
+- `main.py` and `helmer_tags.py` are a lab-internal comparison script, not part of the package.
+
+## Commands
+Development runs in podman containers.
+
+- `./utils/build.sh` builds the `localhost/shrub-dev` image from `Containerfile` (Python + pinned `requirements-dev.txt`, no code). Rebuild only when those two files change.
+- `./utils/generate_dicts.sh` regenerates all `src/shrub/_*.py` dicts inside the `localhost/shrub-dev` container (repo bind-mounted at `/shrub`), running `generate_dicom_dict.py` then `generate_phi_dict.py`. Review the output with `git diff`.
+
+<!-- TODO: running tests, running a single test -->
+
