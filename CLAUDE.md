@@ -30,8 +30,8 @@ Please refer to STANDARD.md for more technical and specific context.
 ## Dictionary Generation
 1. generate_dicom_dict.py & other generator scripts should write the version of the standard into the doc strings of the dictionary files (ex. dicom_dict.py, _phi_dict.py)
 
-## Generator Data Flow
-The `_*.py` dictionaries in `src/shrub/` are generated. Never hand-edit them; change the generator and regenerate.
+## Generator data flow
+The `_*.py` dicts in `src/shrub/` are generated. Never hand-edit them. Change the generator and regenerate.
 
 | Script | Reads (DocBook XML) | Writes | Dicts |
 |---|---|---|---|
@@ -39,17 +39,17 @@ The `_*.py` dictionaries in `src/shrub/` are generated. Never hand-edit them; ch
 | `utils/generate_phi_dict.py` | PS3.15 `part15.xml`: `table_E.1-1` (per-attribute action table) | `_phi_dict.py` | `BasicProfileTags` (int tag keys), `WildcardTags` (string keys like `"50xxxxxx"`) |
 | `utils/generate_phi_dict.py` | PS3.15 `part15.xml`: `table_E.3.10-1` (Retain Safe Private list) | `_safe_private_dict.py` | `SafePrivateTags` (keyed on `(tag, private_creator)`) |
 
-- Both scripts download from `dicom.nema.org/.../current` by default, or take `--local`.
-- Both read the edition from the XML `<subtitle>` (e.g. "DICOM PS3.6 2026d - ..."), write it into the generated file's docstring, and warn if it differs from `__dicom_version__` in `src/shrub/_version.py`.
-- Run `generate_dicom_dict.py` first: `generate_phi_dict.py` cross-checks every `BasicProfileTags` key against `_dicom_dict.py`.
-- After regenerating, run `tests/test_data_invariants.py`. It checks that the shape of the standard the code depends on hasn't changed.
-- Downstream: `tags.py` (`StandardTag`, `TagList`) and `action_codes.py` (`ActionCode`) consume these dicts.
-- `main.py` and `helmer_tags.py` are a lab-internal comparison script, not part of the package.
+- Both scripts fetch the XML from `dicom.nema.org/.../current` at run time and never save it. `--local` reads a local copy instead.
+- Both read the edition from the XML `<subtitle>`, for example "DICOM PS3.6 2026d - Data Dictionary". They write it into each generated file's docstring and warn if it differs from `__dicom_version__` in `src/shrub/_version.py`. They never change `_version.py`. Bump it by hand after regenerating and passing the tests.
+- Run `generate_dicom_dict.py` first, because `generate_phi_dict.py` cross-checks every `BasicProfileTags` key against `_dicom_dict.py`.
+- After regenerating, run `tests/test_data_invariants.py`. It checks facts about the generated dicts that `ActionCode`, `StandardTag` and `TagList` rely on, such as the set of Basic Profile action codes.
+- `tags.py` (`StandardTag`, `TagList`) and `action_codes.py` (`ActionCode`) read these dicts.
+- `main.py` is a lab-internal comparison script that imports `helmer_tags.py`. Neither is part of the package.
 
 ## Commands
-Development runs in podman containers.
+Development runs in the rootless podman image `localhost/shrub-dev` (stored in `~/.local/share/containers/storage`), which holds Python and `requirements-dev.txt` but no code. The repo is bind-mounted at `/shrub` on each run.
 
-- `./utils/build.sh` builds the `localhost/shrub-dev` image from `Containerfile` (Python + pinned `requirements-dev.txt`, no code). Rebuild only when those two files change.
-- `./utils/generate_dicts.sh` regenerates all `src/shrub/_*.py` dicts inside the `localhost/shrub-dev` container (repo bind-mounted at `/shrub`), running `generate_dicom_dict.py` then `generate_phi_dict.py`. Review the output with `git diff`.
-- `./utils/test.sh` runs all of `tests/` in the container. Arguments pass straight to pytest, e.g. `./utils/test.sh tests/test_data_invariants.py` or `./utils/test.sh tests/test_action_codes.py::TestActionCodes::<name> -v`.
+- `./utils/build.sh` builds `localhost/shrub-dev` from `Containerfile`. Rerun it only when `Containerfile` or `requirements-dev.txt` changes.
+- `./utils/generate_dicts.sh` runs `generate_dicom_dict.py` and then `generate_phi_dict.py` in the container. Review the regenerated dicts with `git diff`.
+- `./utils/test.sh` runs all of `tests/` in the container. It passes its arguments to pytest, for example `./utils/test.sh tests/test_data_invariants.py` or `./utils/test.sh tests/test_action_codes.py::TestActionCodes::<name> -v`.
 
