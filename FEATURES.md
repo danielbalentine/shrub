@@ -39,6 +39,8 @@ The rules come from PS3.15 Annex E. The rest of the Standard (PS3.3, PS3.5, PS3.
 - **Status**: not implemented
 - **Notes**: Identifying data can also be in Private Attributes, new Standard Attributes, Retired Attributes, and attributes used only in Standard Extended SOP Classes. "It is the responsibility of the de-identifier to ensure that all identifying information is removed." The table "is subject to extension as the DICOM Standard evolves", and the Standard suggests handling all DA, DT and TM values by VR rather than only the listed ones. It does not say whether to remove known risks or keep only known-safe data. "De-identification of Private SOP Classes is not defined." Shrub has to decide what to do with a public tag that isn't in Table E.1-1. `TODO.md` already lists this decision.
 
+  The second pass measured the size of the gap. Readers of the PS3.6 registry flagged 562 tags whose names suggest people, organizations, IDs, free text, dates or UIDs. A script checked them against `BasicProfileTags`, and 220 are not in Table E.1-1. Under the Basic Profile alone those 220 pass through unchanged. Examples include Document Author (Trial) (0040,A067, PN, retired), Contact Display Name (0074,100C), Owner ID (2100,0160), Printer Name (2110,0030), Radiation Machine Name (3002,0020), Text Value (0040,A160), Document Title (0042,0010) and about 40 comment and description fields. The 220 tags are flagged by name only. Nobody has reviewed them one by one, so the list shows the size of the gap and is not a removal list.
+
 ### 1.4 Conformance Statement content for a de-identifier
 - **Standard**: PS3.15 §E.1.3; PS3.2 §N.1.6 (Table N.1-14), §N.8.4.4 (Table N.8-7), §N.11.2.6 (Table N.11-6)
 - **Label**: normative (PS3.15), informative template (PS3.2)
@@ -50,7 +52,7 @@ The rules come from PS3.15 Annex E. The rest of the Standard (PS3.3, PS3.5, PS3.
   - which attributes are inserted
   - supported Transfer Syntaxes and Options
 
-  PS3.2 §N.8.4.4 also asks how the de-identifier treats attributes added in later editions (kept, removed, or configurable). That ties directly to Shrub's edition tracking. Clean Descriptors, Modified Dates, Retain Patient Characteristics, Retain Safe Private and preamble handling each add their own documentation requirement. Their entries below give the details.
+  PS3.2 §N.8.4.4 also asks how the de-identifier treats attributes added in later editions (kept, removed, or configurable). That ties directly to Shrub's edition tracking. The PS3.2 template for a vendor's private attributes (Table N.9-26) has an "Identifiable Information" column with values such as SAFE. Those vendor tables are one of the sources the Retain Safe Private Option accepts (see 6.2). Clean Descriptors, Modified Dates, Retain Patient Characteristics, Retain Safe Private and preamble handling each add their own documentation requirement. Their entries below give the details.
 
 ### 1.5 Options override the Profile
 - **Standard**: PS3.15 §E.1.1 (text after Table E.1-1a), §E.3
@@ -205,7 +207,7 @@ The legend is PS3.15 Table E.1-1a, repeated in PS3.2 Table N.11-6.
 - **Standard**: PS3.15 §E.3.9
 - **Label**: normative
 - **Status**: data only (Table E.1-1 doesn't list SOP Class UID or Transfer Syntax UID)
-- **Notes**: "One would never remove or replace the SOP Class UID for de-identification purposes." A rule that replaces every UI value would break this.
+- **Notes**: "One would never remove or replace the SOP Class UID for de-identification purposes." A rule that replaces every UI value would break this. PS3.6 registers other UIDs the Standard itself defines, which must also stay unchanged: the Standard Color Palette SOP Instance UIDs (`1.2.840.10008.1.5.x`, PS3.6 Table B.1-1), Template UIDs (`1.2.840.10008.9.x`, Table A-4), Context Group UIDs (`1.2.840.10008.6.1.x`) and Transfer Syntax UIDs. A UID under the `1.2.840.10008` root never identifies a patient, so Shrub can leave every UID under that root unchanged.
 
 ### 4.6 UID pairs and groups that must stay linked
 - **Standard**: PS3.3 §C.7.9.1, §C.7.4.1.1.1, §C.7.4.2.1.1, §C.8.8.5.1, §C.8.20.4.1, §C.11.22, §C.17.2.2 to C.17.2.3, §C.11.28; PS3.4 §B.4.1.3
@@ -318,10 +320,10 @@ The legend is PS3.15 Table E.1-1a, repeated in PS3.2 Table N.11-6.
 - **Notes**: Private Sequences can hold Standard elements, which can be PHI. Pixel, Waveform and Overlay Data must not be inside private Sequence Items in Standard Extended SOP Classes. PS3.15 §E.1.1 says Table E.1-1 also lists Command, Directory and File Meta elements because they "could be misused within Private Sequences".
 
 ### 6.7 Private references from other attributes
-- **Standard**: PS3.3 §10.17.1.2, §C.23.4.1.1.3
+- **Standard**: PS3.3 §10.17.1.2, §C.23.4.1.1.3, §C.7.6.17.1; PS3.4 §C.3.5
 - **Label**: normative
 - **Status**: not implemented
-- **Notes**: Selector and Hanging Protocol attributes point at private elements by a block-relative tag plus a creator string. Removing private blocks leaves these pointers dangling.
+- **Notes**: Selector and Hanging Protocol attributes point at private elements by a block-relative tag plus a creator string. Dimension Index Pointer (0020,9165) and Functional Group Pointer can do the same, with Dimension Index Private Creator (0020,9213) and Functional Group Private Creator (0020,9238) naming the block. Removing private blocks leaves these pointers dangling. Private attributes can also hold UIDs. PS3.4 §C.3.5 warns that "referential integrity of UIDs in Private Attributes might not be updated" by an application that doesn't understand them. A kept private attribute can therefore still carry an original UID after every standard UID has been replaced.
 
 ### 6.8 Raw Data and other opaque private payloads
 - **Standard**: PS3.3 §C.19.1; PS3.17 §MM.7 (informative)
@@ -346,6 +348,8 @@ The legend is PS3.15 Table E.1-1a, repeated in PS3.2 Table N.11-6.
   - Patient Clinical Trial Participation Sequence (§C.2.4)
   - Treatment Machine Sequence (§C.8.8.18)
   - Inventory objects (§A.88, §C.38.1)
+  - Unassigned Shared and Per-Frame Converted Attributes Sequences (0020,9170), (0020,9171) in Legacy Converted images. PS3.4 §C.3.5 says identifying attributes "such as Series Number or Series Description, will be present in the Unassigned functional groups", along with private attributes from the source images.
+  - SR content trees. The PS3.16 dose report templates (TID 10011, 10013, 10022, 10041 and others) and the PS3.17 RDSR examples (§UUUU.4, §UUUU.5) put operator and physician names, device serials, calibration responsible parties and free text into content items. They also copy Study Instance UID, Study Date and Frame of Reference UID from the images (see 10).
 
   `TODO.md` already plans a deep-nesting fixture.
 
@@ -418,10 +422,22 @@ The legend is PS3.15 Table E.1-1a, repeated in PS3.2 Table N.11-6.
 - **Notes**: Flags faces, tattoos and similar content. If Shrub sets Recognizable Visual Features, this sequence should agree with it. PS3.17 says unknown codes should "fail closed".
 
 ### 8.8 Audio and video
-- **Standard**: PS3.3 §A.1.2.12, §C.7.6.5.1.3; PS3.22 chapter 8
+- **Standard**: PS3.3 §A.1.2.12, §C.7.6.5.1.3, §A.32.5.2, §A.32.9.4; PS3.16 code 109110; PS3.22 chapter 8
+- **Label**: informative; normative for the Real-Time Video constraint
+- **Status**: not implemented
+- **Notes**: Waveforms can carry a dictated report in the physician's voice. Video can carry multiplexed audio commentary. Neither can be cleaned by editing attributes. Real-Time Video Endoscopic and Photographic IODs "shall not include audio". Voice and commentary travel in a separate audio waveform IOD (§A.34.10, §A.34.11), which needs the same handling.
+
+### 8.9 Pixel Data padding
+- **Standard**: PS3.5 §8.1.1
+- **Label**: normative
+- **Status**: not implemented
+- **Notes**: "In no case should a sending application place private data in the padding data." Receivers "may delete the excess padding". Older files can still hide bytes after the last pixel, so Shrub can trim padding to the length that Rows, Columns, Samples per Pixel, Bits Allocated and Number of Frames call for.
+
+### 8.10 Images converted from EXIF or TIFF
+- **Standard**: PS3.17 §NNNN.1, Table NNNN-1
 - **Label**: informative
 - **Status**: not implemented
-- **Notes**: Waveforms can carry a dictated report in the physician's voice. Video can carry multiplexed audio commentary. Neither can be cleaned by editing attributes.
+- **Notes**: The mapping table carries EXIF and TIFF metadata into DICOM: Artist into Operators' Name, camera owner, body, lens and camera serial numbers, GPS position and time, UserComment, HostComputer, original ImageID, MakerNote, XMP and IPTC blocks, and the embedded JPEG thumbnail. Photographs converted from cameras can therefore carry identity in places a scanner image never would.
 
 ---
 
@@ -510,14 +526,26 @@ The legend is PS3.15 Table E.1-1a, repeated in PS3.2 Table N.11-6.
 
   For the preamble, PS3.10 §7.5 gives three choices: check that it is all zeroes, check for a known magic number (TIFF), or clear it whatever it holds. Whichever Shrub does must be in the Conformance Statement.
 
+  Files retrieved over DICOMweb as `application/dicom` may keep the AE Titles and Presentation Addresses from when the server first received them (PS3.18 §8.7.3.1). Shrub has to replace their File Meta the same way it does for any other input.
+
 ---
 
 ## 16. DICOMDIR, Group 0004 and file names
 
-- **Standard**: PS3.15 §E.1.1; PS3.10 §6.2.3.2, §7.3, §8.2, §8.6; PS3.11 §A.3.3.2; PS3.12 chapter L; PS3.4 §S.1.1, §S.3.2.1.1
+- **Standard**: PS3.15 §E.1.1; PS3.10 §6.2.3.2, §7.3, §8.2, §8.6; PS3.11 §A.3.3.2, §B.3.3.2, §D.3.3.1, §H.3.3.1; PS3.12 chapter L; PS3.4 §S.1.1, §S.3.2.1.1; PS3.3 §F.3.2, §F.5, §F.6.1, §F.7
 - **Label**: normative
 - **Status**: not implemented
 - **Notes**: "All Data Elements with a Group Number of 0004 shall be removed from any SOP Instance or DICOM File other than a DICOMDIR File." A DICOMDIR must be rebuilt from the de-identified files, or itself de-identified. Otherwise remove it. File IDs and File-set IDs may legally encode patient or study data (PS3.10 §6.2.3.2), so output file names need neutral values. Media creation services don't de-identify anything (PS3.4 §S.1.1).
+
+  De-identifying an existing DICOMDIR means handling the following:
+  - Directory records copy identifying keys from the instances. Patient's Name, Patient ID, Study Date, Study Time and Accession Number are required keys in several PS3.11 profiles.
+  - Directory records can hold Icon Image Sequences (PS3.3 §F.7).
+  - Private directory records and private keys (§F.6.1) can be present.
+  - Free-text keys such as Document Title (§F.5.32) can be present.
+  - The File-set Descriptor File is a non-DICOM file "used for user comments related to the File-set (e.g., a README file)". The Standard does not call it identifying, but it is free text that no DICOM parser reads.
+  - Referenced SOP Instance UID in File must follow the UID replacement.
+
+  Rebuilding the DICOMDIR from the de-identified files avoids all six.
 
 ---
 
@@ -590,18 +618,18 @@ The legend is PS3.15 Table E.1-1a, repeated in PS3.2 Table N.11-6.
 
 | Part | Contributes to sections |
 |---|---|
-| PS3.1, PS3.7, PS3.8, PS3.14, PS3.19 | Nothing found after triage |
+| PS3.1, PS3.7, PS3.8, PS3.14, PS3.19 | Nothing found, after triage and a second full read |
 | PS3.2 Conformance | 1.4, 3.2, 20.1, 20.3 |
-| PS3.3 Information Objects | 3, 4.6, 5.4, 6.3, 6.7, 6.8, 7, 8.3 to 8.8, 9, 10, 11, 13, 14, 18, 19 |
-| PS3.4 Services | 4.6, 9, 14, 16, 20.3 |
-| PS3.5 Encoding | 4.3, 4.4, 6.4 to 6.6, 8.6, 17 |
-| PS3.6 Data Dictionary | 15, 16 (tag registry; also the source of `_dicom_dict.py`) |
+| PS3.3 Information Objects | 3, 4.6, 5.4, 6.3, 6.7, 6.8, 7, 8.3 to 8.8, 9, 10, 11, 13, 14, 16, 18, 19 |
+| PS3.4 Services | 4.6, 6.7, 7.1, 9, 14, 16, 20.3 |
+| PS3.5 Encoding | 4.3, 4.4, 6.4 to 6.6, 8.6, 8.9, 17 |
+| PS3.6 Data Dictionary | 1.3, 4.5, 15, 16 (tag registry; also the source of `_dicom_dict.py`) |
 | PS3.10 File Format | 15, 16 |
 | PS3.11, PS3.12 Media | 8.5, 16 |
 | PS3.15 Security Profiles | 1, 2, 3, 4, 5, 6, 8, 9 to 14, 15, 16, 18, 20.5 |
-| PS3.16 Content Mapping | 3.2, 3.5, 5.3, 8.7, 10 |
-| PS3.17 Explanatory | 3.2, 4.2, 7.3, 8.5, 8.7, 10, 13, 19, 20.4 |
-| PS3.18 Web Services | 1.6, 20.1 to 20.3 |
+| PS3.16 Content Mapping | 3.2, 3.5, 5.3, 7.1, 8.7, 8.8, 10 |
+| PS3.17 Explanatory | 3.2, 4.2, 7.1, 7.3, 8.5, 8.7, 8.10, 10, 13, 19, 20.4 |
+| PS3.18 Web Services | 1.6, 15, 20.1 to 20.3 |
 | PS3.20, PS3.21, PS3.22 | 8.8, 13, 20.5 |
 
 ## Appendix B. Small issues found along the way
@@ -617,14 +645,17 @@ These are small issues noticed during the read. None of them has been fixed.
 ## How this list was made
 
 - **Source**: DocBook XML for all 20 active Parts (PS3.1 to PS3.8, PS3.10 to PS3.12, PS3.14 to PS3.22), downloaded from `dicom.nema.org/medical/dicom/current/source/docbook/` on 2026-11-19. All 20 report edition 2026d in their `<subtitle>`. The XML was kept outside the repo.
-- **Coverage**: not a cover-to-cover read. The full text is about 2.74 million words, which doesn't fit within the usage budget. Instead:
+- **Coverage**: the full text is about 2.74 million words. It was read in two passes. The first pass read the relevant parts closely:
   1. Every section heading and table caption in all Parts (about 101k words) was triaged for relevance.
   2. A keyword search added sections that mention de-identification terms.
   3. Very large tables (the PS3.6 registry, the PS3.16 DCM code table) contribute only the rows that matched a keyword.
   4. Sections over 1,500 words outside PS3.15 contribute their prose plus matching table rows only.
 
-  About 264k words were read in full this way. A relevant passage in a section whose title and text use none of the search terms could have been missed.
+  About 264k words were read in full this way.
+
+  A second pass then read everything the first pass skipped, in 102 chunks of 1,000 to 4,300 lines. That covered all 20 Parts, including the PS3.6 registry, PS3.3 module tables and PS3.16 code tables. Every reader reported reaching the last line of its chunk. One PS3.14 reader skipped 250 lines, which a script confirmed are display calibration numbers. The second pass found 149 candidate findings. Most were marginal or repeated the first pass. The ones added here are in 1.3, 1.4, 4.5, 6.7, 7.1, 8.8 to 8.10, 15 and 16.
 - **Checks**:
-  - Every quote in the reader reports (218 findings) was confirmed to appear word for word in the converted text.
+  - Every quote in the first-pass reports (218 findings) was confirmed to appear word for word in the converted text. In the second pass, 148 of 149 quotes matched by script. The remaining one joins two separate quotes, and both were confirmed by hand in PS3.12.
+  - The 220 tags in 1.3 come from comparing reader-flagged PS3.6 tags against `BasicProfileTags` by script.
   - Table E.1-1 and Table E.3.10-1 were compared row by row against `_phi_dict.py` and `_safe_private_dict.py` by a script independent of the generator.
   - The action legend, CID 7050, Deidentification Action values and Instance Origin Status were re-checked by hand against the source text.
