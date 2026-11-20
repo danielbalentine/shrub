@@ -1,3 +1,5 @@
+<p align="center"><img src="shrub.png" alt="shrub logo" width="100"></p>
+
 # shrub
  
 **shrub** is a best-effort DICOM de-identification tool implementing the
