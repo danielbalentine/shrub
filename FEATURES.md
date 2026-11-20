@@ -37,15 +37,11 @@ The rules come from PS3.15 Annex E. The rest of the Standard (PS3.3, PS3.5, PS3.
 - **Standard**: PS3.15 §E.1.1 (Notes after Table E.1-1a)
 - **Label**: normative
 - **Status**: not implemented
-- **Notes**: Identifying data can also be in Private Attributes, new Standard Attributes, Retired Attributes, and attributes used only in Standard Extended SOP Classes. "It is the responsibility of the de-identifier to ensure that all identifying information is removed." The table "is subject to extension as the DICOM Standard evolves", and the Standard suggests handling all DA, DT and TM values by VR rather than only the listed ones. It does not say whether to remove known risks or keep only known-safe data. "De-identification of Private SOP Classes is not defined." Shrub has to decide what to do with a public tag that isn't in Table E.1-1. `TODO.md` already lists this decision.
+- **Notes**: Identifying data can also be in Private Attributes, new Standard Attributes, Retired Attributes, and attributes used only in Standard Extended SOP Classes. "It is the responsibility of the de-identifier to ensure that all identifying information is removed." The table "is subject to extension as the DICOM Standard evolves", and the Standard suggests handling all DA, DT and TM values by VR rather than only the listed ones. It does not say whether to remove known risks or keep only known-safe data. "De-identification of Private SOP Classes is not defined." The next paragraph gives Shrub's decision for public tags that aren't in Table E.1-1.
 
-  The second pass gave a partial measure of the gap. The PS3.6 readers cited 562 tags. A script found that 220 of them are not in Table E.1-1, and under the Basic Profile alone those 220 pass through unchanged. [UNLISTED.md](UNLISTED.md) lists all 220, grouped by a first-guess category. About 70 of them are not identifying. These are mostly structural values such as Pixel Data and SOP Class UID, plus sequences whose contents the table does list. The rest are a real gap:
-  - Patient's Birth Date in Alternative Calendar (0010,0033) and Patient's Death Date in Alternative Calendar (0010,0034). Both are LO, so a date rule keyed on DA, DT and TM misses them.
-  - 32 names and IDs, such as Document Author (Trial) (0040,A067), Contact Display Name (0074,100C), Owner ID (2100,0160) and Printer Name (2110,0030).
-  - 54 free-text fields, such as Text Value (0040,A160), Document Title (0042,0010) and Dose Comment (3004,0006).
-  - 11 URIs and addresses, 16 instance UIDs not marked `U`, and 8 dates and times.
+  Shrub follows Table E.1-1 as written. Public tags outside the table are out of scope, and Shrub passes them through unchanged under the Basic Profile.
 
-  The list holds only the tags the readers cited. A full comparison of `DicomDictionary` against `BasicProfileTags` would be complete.
+  [UNLISTED.md](UNLISTED.md) is for reference only. During the read of the PS3.6 registry, the reader agents were told to note tags whose names suggested they could hold identifying information. A script then kept the 220 cited tags that Table E.1-1 does not list. The Standard does not call these tags identifying; the judgment came from the reader agents, based on each tag's name and VR. About 70 of the 220 turned out not to be identifying at all. They are structural values such as Pixel Data and SOP Class UID, or sequences whose contents the table does list. The list is also partial, because it holds only the tags the reader agents cited.
 
 ### 1.4 Conformance Statement content for a de-identifier
 - **Standard**: PS3.15 §E.1.3; PS3.2 §N.1.6 (Table N.1-14), §N.8.4.4 (Table N.8-7), §N.11.2.6 (Table N.11-6)
@@ -427,24 +423,6 @@ The legend is PS3.15 Table E.1-1a, repeated in PS3.2 Table N.11-6.
 - **Status**: not implemented
 - **Notes**: Flags faces, tattoos and similar content. If Shrub sets Recognizable Visual Features, this sequence should agree with it. PS3.17 says unknown codes should "fail closed".
 
-### 8.8 Audio and video
-- **Standard**: PS3.3 §A.1.2.12, §C.7.6.5.1.3, §A.32.5.2, §A.32.9.4; PS3.16 code 109110; PS3.22 chapter 8
-- **Label**: informative; normative for the Real-Time Video constraint
-- **Status**: not implemented
-- **Notes**: Waveforms can carry a dictated report in the physician's voice. Video can carry multiplexed audio commentary. Neither can be cleaned by editing attributes. Real-Time Video Endoscopic and Photographic IODs "shall not include audio". Voice and commentary travel in a separate audio waveform IOD (§A.34.10, §A.34.11), which needs the same handling.
-
-### 8.9 Pixel Data padding
-- **Standard**: PS3.5 §8.1.1
-- **Label**: normative
-- **Status**: not implemented
-- **Notes**: "In no case should a sending application place private data in the padding data." Receivers "may delete the excess padding". Older files can still hide bytes after the last pixel, so Shrub can trim padding to the length that Rows, Columns, Samples per Pixel, Bits Allocated and Number of Frames call for.
-
-### 8.10 Images converted from EXIF or TIFF
-- **Standard**: PS3.17 §NNNN.1, Table NNNN-1
-- **Label**: informative
-- **Status**: not implemented
-- **Notes**: The mapping table carries EXIF and TIFF metadata into DICOM: Artist into Operators' Name, camera owner, body, lens and camera serial numbers, GPS position and time, UserComment, HostComputer, original ImageID, MakerNote, XMP and IPTC blocks, and the embedded JPEG thumbnail. Photographs converted from cameras can therefore carry identity in places a scanner image never would.
-
 ---
 
 ## 9. Graphics and annotations (Clean Graphics Option)
@@ -626,17 +604,17 @@ The legend is PS3.15 Table E.1-1a, repeated in PS3.2 Table N.11-6.
 |---|---|
 | PS3.1, PS3.7, PS3.8, PS3.14, PS3.19 | Nothing found, after triage and a second full read |
 | PS3.2 Conformance | 1.4, 3.2, 20.1, 20.3 |
-| PS3.3 Information Objects | 3, 4.6, 5.4, 6.3, 6.7, 6.8, 7, 8.3 to 8.8, 9, 10, 11, 13, 14, 16, 18, 19 |
+| PS3.3 Information Objects | 3, 4.6, 5.4, 6.3, 6.7, 6.8, 7, 8.3 to 8.7, 9, 10, 11, 13, 14, 16, 18, 19 |
 | PS3.4 Services | 4.6, 6.7, 7.1, 9, 14, 16, 20.3 |
-| PS3.5 Encoding | 4.3, 4.4, 6.4 to 6.6, 8.6, 8.9, 17 |
+| PS3.5 Encoding | 4.3, 4.4, 6.4 to 6.6, 8.6, 17 |
 | PS3.6 Data Dictionary | 1.3, 4.5, 15, 16 (tag registry; also the source of `_dicom_dict.py`) |
 | PS3.10 File Format | 15, 16 |
 | PS3.11, PS3.12 Media | 8.5, 16 |
 | PS3.15 Security Profiles | 1, 2, 3, 4, 5, 6, 8, 9 to 14, 15, 16, 18, 20.5 |
-| PS3.16 Content Mapping | 3.2, 3.5, 5.3, 7.1, 8.7, 8.8, 10 |
-| PS3.17 Explanatory | 3.2, 4.2, 7.1, 7.3, 8.5, 8.7, 8.10, 10, 13, 19, 20.4 |
+| PS3.16 Content Mapping | 3.2, 3.5, 5.3, 7.1, 8.7, 10 |
+| PS3.17 Explanatory | 3.2, 4.2, 7.1, 7.3, 8.5, 8.7, 10, 13, 19, 20.4 |
 | PS3.18 Web Services | 1.6, 15, 20.1 to 20.3 |
-| PS3.20, PS3.21, PS3.22 | 8.8, 13, 20.5 |
+| PS3.20, PS3.21, PS3.22 | 13, 20.5 |
 
 ## Appendix B. Small issues found along the way
 
@@ -659,7 +637,7 @@ These are small issues noticed during the read. None of them has been fixed.
 
   About 264k words were read in full this way.
 
-  A second pass then read everything the first pass skipped, in 102 chunks of 1,000 to 4,300 lines. That covered all 20 Parts, including the PS3.6 registry, PS3.3 module tables and PS3.16 code tables. Every reader reported reaching the last line of its chunk. One PS3.14 reader skipped 250 lines, which a script confirmed are display calibration numbers. The second pass found 149 candidate findings. Most were marginal or repeated the first pass. The ones added here are in 1.3, 1.4, 4.5, 6.7, 7.1, 8.8 to 8.10, 15 and 16.
+  A second pass then read everything the first pass skipped, in 102 chunks of 1,000 to 4,300 lines. That covered all 20 Parts, including the PS3.6 registry, PS3.3 module tables and PS3.16 code tables. Every reader reported reaching the last line of its chunk. One PS3.14 reader skipped 250 lines, which a script confirmed are display calibration numbers. The second pass found 149 candidate findings. Most were marginal or repeated the first pass. The ones added here are in 1.3, 1.4, 4.5, 6.7, 7.1, 15 and 16.
 - **Checks**:
   - Every quote in the first-pass reports (218 findings) was confirmed to appear word for word in the converted text. In the second pass, 148 of 149 quotes matched by script. The remaining one joins two separate quotes, and both were confirmed by hand in PS3.12.
   - The 220 tags in 1.3 come from comparing reader-cited PS3.6 tags against `BasicProfileTags` by script. Their categories in `UNLISTED.md` were assigned by hand.

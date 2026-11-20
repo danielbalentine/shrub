@@ -1,14 +1,10 @@
 # Public tags not listed in Table E.1-1
 
-PS3.15 §E.1.1 requires a de-identifier to protect or retain the attributes listed in Table E.1-1. Under the Basic Profile alone, a public attribute that the table does not list passes through unchanged. This file lists 220 such attributes, found during the read of DICOM 2026d that produced [FEATURES.md](FEATURES.md) (see section 1.3 there).
+Reference only. Shrub follows PS3.15 Table E.1-1 as written, and these tags are out of scope (see [FEATURES.md](FEATURES.md) section 1.3).
 
-How the list was made:
+During the read of the PS3.6 registry for DICOM 2026d, the reader agents were told to note tags whose names suggested they could hold identifying information. A script took every tag cited in those four reports (562 in all) and kept the 220 that are not keys of `BasicProfileTags` in `src/shrub/_phi_dict.py`. VR, name and retired status come from `src/shrub/_dicom_dict.py`.
 
-1. Readers of the PS3.6 registry noted tags whose names suggested people, organizations, IDs, free text, dates or UIDs. They also cited some tags only for context.
-2. A script took every tag cited in those four reports (562 in all) and kept the 220 that are not keys of `BasicProfileTags` in `src/shrub/_phi_dict.py`. VR, name and retired status come from `src/shrub/_dicom_dict.py`.
-3. The categories below were assigned by hand from the tag name and VR. Nobody checked each tag's module definition in PS3.3, so a category is a first guess.
-
-The list is not complete. It holds only the tags the readers happened to cite. A complete list would compare every tag in `DicomDictionary` against `BasicProfileTags`.
+The Standard does not call these tags identifying. That judgment came from the reader agents, from each tag's name and VR. The groups below were assigned by hand the same way, without checking each tag's definition in PS3.3. About 70 of the 220 are not identifying at all. The list is partial, because it holds only the tags the reader agents cited.
 
 | Category | Count |
 |---|---|
@@ -27,7 +23,7 @@ The list is not complete. It holds only the tags the readers happened to cite. A
 
 ## Alt-calendar date
 
-Patient dates stored as LO, so a rule that handles dates by VR (DA, DT, TM) misses them.
+Patient dates stored with VR LO rather than DA.
 
 | Tag | VR | Name | Retired |
 |---|---|---|---|
@@ -75,7 +71,7 @@ Names of people or devices, and identifiers that point to a person, device or si
 
 ## Free text
 
-Comments, descriptions, labels and reasons. Same risk as the Clean Descriptors fields, but not in that list.
+Comments, descriptions, labels and reasons.
 
 | Tag | VR | Name | Retired |
 |---|---|---|---|
@@ -136,7 +132,7 @@ Comments, descriptions, labels and reasons. Same risk as the Clean Descriptors f
 
 ## URI or address
 
-URLs, URIs, file names and network addresses. Can expose hostnames or file names that contain patient names.
+URLs, URIs, file names and network addresses.
 
 | Tag | VR | Name | Retired |
 |---|---|---|---|
@@ -154,7 +150,7 @@ URLs, URIs, file names and network addresses. Can expose hostnames or file names
 
 ## Instance UID
 
-UIDs of instances, frames of reference or events that Table E.1-1 does not mark `U`. Keeping them allows linkage to the originals; replacing them needs the same mapping as other UIDs.
+UIDs of instances, frames of reference or events.
 
 | Tag | VR | Name | Retired |
 |---|---|---|---|
@@ -177,7 +173,7 @@ UIDs of instances, frames of reference or events that Table E.1-1 does not mark 
 
 ## Date or time
 
-Dates and times. A VR-based date rule would catch these.
+Dates and times.
 
 | Tag | VR | Name | Retired |
 |---|---|---|---|
@@ -211,7 +207,7 @@ Private Creator strings that name private blocks used by Dimension Index and Fun
 
 ## Container
 
-Sequences that Table E.1-1 does not list, though it lists the attributes inside them. Safe only if Shrub walks every item (FEATURES.md 7.1).
+Sequences that Table E.1-1 does not list, though it lists some of the attributes inside them.
 
 | Tag | VR | Name | Retired |
 |---|---|---|---|
@@ -248,7 +244,7 @@ Sequences that Table E.1-1 does not list, though it lists the attributes inside 
 
 ## Structural
 
-Not identifying. Many must stay, such as Transfer Syntax UID, SOP Class UID and Pixel Data, or must be written by Shrub, such as De-identification Method Code Sequence. Readers cited them for context.
+Not identifying. Examples are Transfer Syntax UID, SOP Class UID, Pixel Data and De-identification Method Code Sequence. Reader agents cited them for context.
 
 | Tag | VR | Name | Retired |
 |---|---|---|---|
@@ -303,7 +299,7 @@ Group 0014, industrial non-destructive testing. Unlikely in medical data.
 
 ## DICOS (security screening)
 
-Group 4010, airport security screening. Unlikely in medical data, though Boarding Pass ID identifies a person.
+Group 4010, airport security screening. Unlikely in medical data.
 
 | Tag | VR | Name | Retired |
 |---|---|---|---|
