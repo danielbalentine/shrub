@@ -1,0 +1,4437 @@
+{
+  "00041511": {
+    "vr": "UI",
+    "Value": [
+      "2.25.175749926573213102124130881205307024049"
+    ]
+  },
+  "00080012": {
+    "vr": "DA",
+    "Value": [
+      "20040207"
+    ]
+  },
+  "00080013": {
+    "vr": "TM",
+    "Value": [
+      "191354.021"
+    ]
+  },
+  "00080014": {
+    "vr": "UI",
+    "Value": [
+      "2.25.235760914115251151482390902570951533801"
+    ]
+  },
+  "00080015": {
+    "vr": "DT",
+    "Value": [
+      "19791019115503.288164"
+    ]
+  },
+  "00080017": {
+    "vr": "UI",
+    "Value": [
+      "2.25.226615700542660899052173329497834507037"
+    ]
+  },
+  "00080018": {
+    "vr": "UI",
+    "Value": [
+      "2.25.9341425758857649981366036037393525437"
+    ]
+  },
+  "00080019": {
+    "vr": "UI",
+    "Value": [
+      "2.25.112417378266269960711685248327364495963"
+    ]
+  },
+  "00080020": {
+    "vr": "DA",
+    "Value": [
+      "19661116"
+    ]
+  },
+  "00080021": {
+    "vr": "DA",
+    "Value": [
+      "20120916"
+    ]
+  },
+  "00080022": {
+    "vr": "DA",
+    "Value": [
+      "19900512"
+    ]
+  },
+  "00080023": {
+    "vr": "DA",
+    "Value": [
+      "19890701"
+    ]
+  },
+  "00080024": {
+    "vr": "DA",
+    "Value": [
+      "19590609"
+    ]
+  },
+  "00080025": {
+    "vr": "DA",
+    "Value": [
+      "19450402"
+    ]
+  },
+  "0008002A": {
+    "vr": "DT",
+    "Value": [
+      "19400719071430.064282"
+    ]
+  },
+  "00080030": {
+    "vr": "TM",
+    "Value": [
+      "052024.003"
+    ]
+  },
+  "00080031": {
+    "vr": "TM",
+    "Value": [
+      "225103.142"
+    ]
+  },
+  "00080032": {
+    "vr": "TM",
+    "Value": [
+      "172013.211"
+    ]
+  },
+  "00080033": {
+    "vr": "TM",
+    "Value": [
+      "185416.090"
+    ]
+  },
+  "00080034": {
+    "vr": "TM",
+    "Value": [
+      "135053.450"
+    ]
+  },
+  "00080035": {
+    "vr": "TM",
+    "Value": [
+      "191433.309"
+    ]
+  },
+  "00080050": {
+    "vr": "SH",
+    "Value": [
+      "MRN881415163"
+    ]
+  },
+  "00080054": {
+    "vr": "AE",
+    "Value": [
+      "WFIA_US01"
+    ]
+  },
+  "00080055": {
+    "vr": "AE",
+    "Value": [
+      "BVH_CT08"
+    ]
+  },
+  "00080058": {
+    "vr": "UI",
+    "Value": [
+      "2.25.137062957660166136769251377436361368615"
+    ]
+  },
+  "00080080": {
+    "vr": "LO",
+    "Value": [
+      "NORTH TARRANT CHILDRENS HOSPITAL"
+    ]
+  },
+  "00080081": {
+    "vr": "ST",
+    "Value": [
+      "R/O PULMONARY EMBOLISM. SCREENING MAMMOGRAM ANNUAL. SEEN BY DR HALVORSEN."
+    ]
+  },
+  "00080082": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "00080106": {
+          "vr": "DT",
+          "Value": [
+            "20000618152926.234865"
+          ]
+        }
+      }
+    ]
+  },
+  "00080090": {
+    "vr": "PN",
+    "Value": [
+      {
+        "Alphabetic": "NWOSU^VIKRAM^ROSE"
+      }
+    ]
+  },
+  "00080092": {
+    "vr": "ST",
+    "Value": [
+      "RESEARCH PROTOCOL ENROLLMENT VISIT. FOLLOW UP MRI BRAIN W WO CONTRAST. SEEN BY DR ROSSITER."
+    ]
+  },
+  "00080094": {
+    "vr": "SH",
+    "Value": [
+      "775-555-0193"
+    ]
+  },
+  "00080096": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "00401102": {
+          "vr": "ST",
+          "Value": [
+            "HX OF FALL AT HOME LAST TUESDAY. PREGNANCY TEST NEGATIVE CONFIRMED BY NURSE. SEEN BY DR OYELARAN."
+          ]
+        }
+      }
+    ]
+  },
+  "0008009C": {
+    "vr": "PN",
+    "Value": [
+      {
+        "Alphabetic": "PRZYBYLSKI^GRAHAM^MARIE"
+      }
+    ]
+  },
+  "0008009D": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "00401103": {
+          "vr": "LO",
+          "Value": [
+            "775-555-0166"
+          ]
+        }
+      }
+    ]
+  },
+  "00080106": {
+    "vr": "DT",
+    "Value": [
+      "19930720135642.526984"
+    ]
+  },
+  "00080107": {
+    "vr": "DT",
+    "Value": [
+      "20181011152616.469854"
+    ]
+  },
+  "00080201": {
+    "vr": "SH",
+    "Value": [
+      "-0800"
+    ]
+  },
+  "00081000": {
+    "vr": "AE",
+    "Value": [
+      "ACI_US06"
+    ]
+  },
+  "00081010": {
+    "vr": "SH",
+    "Value": [
+      "CRUH_DX09"
+    ]
+  },
+  "00081030": {
+    "vr": "LO",
+    "Value": [
+      "CHRONIC HEADACHES SINCE MVA DR MARCHETTI"
+    ]
+  },
+  "0008103E": {
+    "vr": "LO",
+    "Value": [
+      "CONTRAST ALLERGY PREMEDICATED DR ROSSITER"
+    ]
+  },
+  "00081040": {
+    "vr": "LO",
+    "Value": [
+      "RADIATION ONCOLOGY CRUH"
+    ]
+  },
+  "00081041": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "00080106": {
+          "vr": "DT",
+          "Value": [
+            "19430917151918.303056"
+          ]
+        }
+      }
+    ]
+  },
+  "00081048": {
+    "vr": "PN",
+    "Value": [
+      {
+        "Alphabetic": "NAKAMURA^TOMASZ^ROSE"
+      }
+    ]
+  },
+  "00081049": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "00401103": {
+          "vr": "LO",
+          "Value": [
+            "207-555-0120"
+          ]
+        }
+      }
+    ]
+  },
+  "00081050": {
+    "vr": "PN",
+    "Value": [
+      {
+        "Alphabetic": "LINDQVIST^NIKOLAI^JUNE"
+      }
+    ]
+  },
+  "00081052": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "00080080": {
+          "vr": "LO",
+          "Value": [
+            "ASHGROVE CANCER INSTITUTE"
+          ]
+        }
+      }
+    ]
+  },
+  "00081060": {
+    "vr": "PN",
+    "Value": [
+      {
+        "Alphabetic": "ROSSITER^NIKOLAI^ANNE"
+      }
+    ]
+  },
+  "00081062": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "00080081": {
+          "vr": "ST",
+          "Value": [
+            "POST OP LEFT KNEE ARTHROPLASTY. PT CLAUSTROPHOBIC SEDATED PER DR REQUEST. SEEN BY DR DUBOIS."
+          ]
+        }
+      }
+    ]
+  },
+  "00081070": {
+    "vr": "PN",
+    "Value": [
+      {
+        "Alphabetic": "SANTOS^VIKRAM^JUNE"
+      }
+    ]
+  },
+  "00081072": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "00401103": {
+          "vr": "LO",
+          "Value": [
+            "541-555-0148"
+          ]
+        }
+      }
+    ]
+  },
+  "00081080": {
+    "vr": "LO",
+    "Value": [
+      "CONTRAST ALLERGY PREMEDICATED DR MORCOMBE"
+    ]
+  },
+  "00081084": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "00080107": {
+          "vr": "DT",
+          "Value": [
+            "19500812062854.057262"
+          ]
+        }
+      }
+    ]
+  },
+  "00081088": {
+    "vr": "LO",
+    "Value": [
+      "POST OP LEFT KNEE ARTHROPLASTY DR DESAI"
+    ]
+  },
+  "00081110": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "00081155": {
+          "vr": "UI",
+          "Value": [
+            "2.25.248223936969874062344825139539371917713"
+          ]
+        }
+      }
+    ]
+  },
+  "00081111": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "00081155": {
+          "vr": "UI",
+          "Value": [
+            "2.25.268828119528773868454703741263266209639"
+          ]
+        }
+      }
+    ]
+  },
+  "00081120": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "00081155": {
+          "vr": "UI",
+          "Value": [
+            "2.25.8875652217514874216263099636699334453"
+          ]
+        }
+      }
+    ]
+  },
+  "00081140": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "00400512": {
+          "vr": "LO",
+          "Value": [
+            "RQ769563598"
+          ]
+        }
+      }
+    ]
+  },
+  "00081155": {
+    "vr": "UI",
+    "Value": [
+      "2.25.235385916816352257249942742114823024955"
+    ]
+  },
+  "00081195": {
+    "vr": "UI",
+    "Value": [
+      "2.25.254407887029952082698758636903059702907"
+    ]
+  },
+  "00081301": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "00080106": {
+          "vr": "DT",
+          "Value": [
+            "20171013134014.052627"
+          ]
+        }
+      }
+    ]
+  },
+  "00081302": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "00080107": {
+          "vr": "DT",
+          "Value": [
+            "19450509090236.783398"
+          ]
+        }
+      }
+    ]
+  },
+  "00081303": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "00080106": {
+          "vr": "DT",
+          "Value": [
+            "19970630152318.799328"
+          ]
+        }
+      }
+    ]
+  },
+  "00081304": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "00080106": {
+          "vr": "DT",
+          "Value": [
+            "19981208114921.408212"
+          ]
+        }
+      }
+    ]
+  },
+  "00082111": {
+    "vr": "ST",
+    "Value": [
+      "TRANSFERRED FROM OUTSIDE FACILITY. RESEARCH PROTOCOL ENROLLMENT VISIT. SEEN BY DR IBARRA."
+    ]
+  },
+  "00082112": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "00081155": {
+          "vr": "UI",
+          "Value": [
+            "2.25.83989305244857280559166120949019572015"
+          ]
+        }
+      }
+    ]
+  },
+  "00083010": {
+    "vr": "UI",
+    "Value": [
+      "2.25.209786444362428305961203893682801241227"
+    ]
+  },
+  "00084000": {
+    "vr": "LT",
+    "Value": [
+      "CONTRAST ALLERGY PREMEDICATED. POST OP LEFT KNEE ARTHROPLASTY. SEEN BY DR DUBOIS."
+    ]
+  },
+  "00100010": {
+    "vr": "PN",
+    "Value": [
+      {
+        "Alphabetic": "BRENNAN^YUKI^MARIE"
+      }
+    ]
+  },
+  "00100011": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "00100013": {
+          "vr": "UT",
+          "Value": [
+            "SCREENING MAMMOGRAM ANNUAL. RESEARCH PROTOCOL ENROLLMENT VISIT. SEEN BY DR FAIRCLOUGH."
+          ]
+        }
+      }
+    ]
+  },
+  "00100012": {
+    "vr": "LT",
+    "Value": [
+      "CHRONIC HEADACHES SINCE MVA. RESEARCH PROTOCOL ENROLLMENT VISIT. SEEN BY DR ODUYA."
+    ]
+  },
+  "00100013": {
+    "vr": "UT",
+    "Value": [
+      "RESEARCH PROTOCOL ENROLLMENT VISIT. SCREENING MAMMOGRAM ANNUAL. SEEN BY DR HALVORSEN."
+    ]
+  },
+  "00100014": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "0040A034": {
+          "vr": "DT",
+          "Value": [
+            "19660129120934.128774"
+          ]
+        }
+      }
+    ]
+  },
+  "00100015": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "00080107": {
+          "vr": "DT",
+          "Value": [
+            "19960520011528.483600"
+          ]
+        }
+      }
+    ]
+  },
+  "00100016": {
+    "vr": "UT",
+    "Value": [
+      "HX OF FALL AT HOME LAST TUESDAY. R/O PULMONARY EMBOLISM. SEEN BY DR ROSSITER."
+    ]
+  },
+  "00100020": {
+    "vr": "LO",
+    "Value": [
+      "SN313126524"
+    ]
+  },
+  "00100021": {
+    "vr": "LO",
+    "Value": [
+      "ACC819519959"
+    ]
+  },
+  "00100030": {
+    "vr": "DA",
+    "Value": [
+      "19460819"
+    ]
+  },
+  "00100032": {
+    "vr": "TM",
+    "Value": [
+      "091601.449"
+    ]
+  },
+  "00100040": {
+    "vr": "CS",
+    "Value": [
+      "F"
+    ]
+  },
+  "00100041": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "0040A035": {
+          "vr": "DT",
+          "Value": [
+            "19800615153753.742977"
+          ]
+        }
+      }
+    ]
+  },
+  "00100042": {
+    "vr": "UT",
+    "Value": [
+      "STAGING CT CHEST ABD PELVIS. CONTRAST ALLERGY PREMEDICATED. SEEN BY DR BRENNAN."
+    ]
+  },
+  "00100043": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "0040A034": {
+          "vr": "DT",
+          "Value": [
+            "20101219235924.896264"
+          ]
+        }
+      }
+    ]
+  },
+  "00100044": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "00080106": {
+          "vr": "DT",
+          "Value": [
+            "20000512192531.550953"
+          ]
+        }
+      }
+    ]
+  },
+  "00100045": {
+    "vr": "UT",
+    "Value": [
+      "PT CLAUSTROPHOBIC SEDATED PER DR REQUEST. COMPARE WITH PRIOR OUTSIDE STUDY. SEEN BY DR DUBOIS."
+    ]
+  },
+  "00100046": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "00080107": {
+          "vr": "DT",
+          "Value": [
+            "20130113110411.809433"
+          ]
+        }
+      }
+    ]
+  },
+  "00100047": {
+    "vr": "UR",
+    "Value": [
+      "https://pacs.hollowcreek.example/viewer?study=82315269"
+    ]
+  },
+  "00100050": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "00080106": {
+          "vr": "DT",
+          "Value": [
+            "19810420102824.382685"
+          ]
+        }
+      }
+    ]
+  },
+  "00100101": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "00080107": {
+          "vr": "DT",
+          "Value": [
+            "20150110004059.992655"
+          ]
+        }
+      }
+    ]
+  },
+  "00100102": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "00080106": {
+          "vr": "DT",
+          "Value": [
+            "20070109103637.908383"
+          ]
+        }
+      }
+    ]
+  },
+  "00101000": {
+    "vr": "LO",
+    "Value": [
+      "ACC954742721"
+    ]
+  },
+  "00101001": {
+    "vr": "PN",
+    "Value": [
+      {
+        "Alphabetic": "LACHANCE^VIKRAM^MARIE"
+      }
+    ]
+  },
+  "00101002": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "00100020": {
+          "vr": "LO",
+          "Value": [
+            "EID602296021"
+          ]
+        }
+      }
+    ]
+  },
+  "00101005": {
+    "vr": "PN",
+    "Value": [
+      {
+        "Alphabetic": "ODUYA^KWAME^ROSE"
+      }
+    ]
+  },
+  "00101010": {
+    "vr": "AS",
+    "Value": [
+      "037Y"
+    ]
+  },
+  "00101020": {
+    "vr": "DS",
+    "Value": [
+      1.93
+    ]
+  },
+  "00101030": {
+    "vr": "DS",
+    "Value": [
+      96.2
+    ]
+  },
+  "00101040": {
+    "vr": "LO",
+    "Value": [
+      "6342 WILLOW BEND, CALDER RIDGE NV 51463"
+    ]
+  },
+  "00101050": {
+    "vr": "LO",
+    "Value": [
+      "PREGNANCY TEST NEGATIVE CONFIRMED BY NURSE DR LACHANCE"
+    ]
+  },
+  "00101060": {
+    "vr": "PN",
+    "Value": [
+      {
+        "Alphabetic": "PRZYBYLSKI^LEOPOLD^DEAN"
+      }
+    ]
+  },
+  "00101080": {
+    "vr": "LO",
+    "Value": [
+      "COMPARE WITH PRIOR OUTSIDE STUDY DR HALVORSEN"
+    ]
+  },
+  "00101081": {
+    "vr": "LO",
+    "Value": [
+      "PREGNANCY TEST NEGATIVE CONFIRMED BY NURSE DR ROSSITER"
+    ]
+  },
+  "00101090": {
+    "vr": "LO",
+    "Value": [
+      "RESEARCH PROTOCOL ENROLLMENT VISIT DR VOLKOV"
+    ]
+  },
+  "00101100": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "0020000D": {
+          "vr": "UI",
+          "Value": [
+            "2.25.29752300414331189725143266269924793227"
+          ]
+        }
+      }
+    ]
+  },
+  "00102000": {
+    "vr": "LO",
+    "Value": [
+      "CONTRAST ALLERGY PREMEDICATED DR SANTOS"
+    ]
+  },
+  "00102110": {
+    "vr": "LO",
+    "Value": [
+      "R/O PULMONARY EMBOLISM DR TANAKA"
+    ]
+  },
+  "00102150": {
+    "vr": "LO",
+    "Value": [
+      "PREGNANCY TEST NEGATIVE CONFIRMED BY NURSE DR DESAI"
+    ]
+  },
+  "00102152": {
+    "vr": "LO",
+    "Value": [
+      "TRANSFERRED FROM OUTSIDE FACILITY DR MARCHETTI"
+    ]
+  },
+  "00102154": {
+    "vr": "SH",
+    "Value": [
+      "406-555-0117"
+    ]
+  },
+  "00102155": {
+    "vr": "LT",
+    "Value": [
+      "PREGNANCY TEST NEGATIVE CONFIRMED BY NURSE. CHRONIC HEADACHES SINCE MVA. SEEN BY DR ELLSWORTH."
+    ]
+  },
+  "00102160": {
+    "vr": "SH",
+    "Value": [
+      "ASIAN"
+    ]
+  },
+  "00102161": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "00080107": {
+          "vr": "DT",
+          "Value": [
+            "19700811004025.796409"
+          ]
+        }
+      }
+    ]
+  },
+  "00102162": {
+    "vr": "UC",
+    "Value": [
+      "MAORI"
+    ]
+  },
+  "00102180": {
+    "vr": "SH",
+    "Value": [
+      "TEACHER"
+    ]
+  },
+  "001021A0": {
+    "vr": "CS",
+    "Value": [
+      "YES"
+    ]
+  },
+  "001021B0": {
+    "vr": "LT",
+    "Value": [
+      "REPEAT SCAN DUE TO MOTION. COMPARE WITH PRIOR OUTSIDE STUDY. SEEN BY DR FAIRCLOUGH."
+    ]
+  },
+  "001021C0": {
+    "vr": "US",
+    "Value": [
+      4
+    ]
+  },
+  "001021D0": {
+    "vr": "DA",
+    "Value": [
+      "19900628"
+    ]
+  },
+  "001021F0": {
+    "vr": "LO",
+    "Value": [
+      "STAGING CT CHEST ABD PELVIS DR HALVORSEN"
+    ]
+  },
+  "00102203": {
+    "vr": "CS",
+    "Value": [
+      "UNALTERED"
+    ]
+  },
+  "00102297": {
+    "vr": "PN",
+    "Value": [
+      {
+        "Alphabetic": "KILBRIDE^ULLA^ROSE"
+      }
+    ]
+  },
+  "00102299": {
+    "vr": "LO",
+    "Value": [
+      "ST. ODILE COMMUNITY HOSPITAL"
+    ]
+  },
+  "00104000": {
+    "vr": "LT",
+    "Value": [
+      "PT CLAUSTROPHOBIC SEDATED PER DR REQUEST. HX OF FALL AT HOME LAST TUESDAY. SEEN BY DR ABERNATHY."
+    ]
+  },
+  "00120010": {
+    "vr": "LO",
+    "Value": [
+      "CALDER RIDGE UNIVERSITY HEALTH"
+    ]
+  },
+  "00120020": {
+    "vr": "LO",
+    "Value": [
+      "ORD319297470"
+    ]
+  },
+  "00120021": {
+    "vr": "LO",
+    "Value": [
+      "ODILE IMAGING CENTER"
+    ]
+  },
+  "00120022": {
+    "vr": "LO",
+    "Value": [
+      "PID149740265"
+    ]
+  },
+  "00120023": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "00120020": {
+          "vr": "LO",
+          "Value": [
+            "EID195050235"
+          ]
+        }
+      }
+    ]
+  },
+  "00120030": {
+    "vr": "LO",
+    "Value": [
+      "ORD624050304"
+    ]
+  },
+  "00120031": {
+    "vr": "LO",
+    "Value": [
+      "PINEMOOR VETERANS CLINIC"
+    ]
+  },
+  "00120032": {
+    "vr": "LO",
+    "Value": [
+      "ORD351627606"
+    ]
+  },
+  "00120040": {
+    "vr": "LO",
+    "Value": [
+      "EID777222379"
+    ]
+  },
+  "00120041": {
+    "vr": "LO",
+    "Value": [
+      "PID479181462"
+    ]
+  },
+  "00120042": {
+    "vr": "LO",
+    "Value": [
+      "EID941516895"
+    ]
+  },
+  "00120043": {
+    "vr": "LO",
+    "Value": [
+      "PID839385859"
+    ]
+  },
+  "00120050": {
+    "vr": "LO",
+    "Value": [
+      "ORD413050921"
+    ]
+  },
+  "00120051": {
+    "vr": "ST",
+    "Value": [
+      "PREGNANCY TEST NEGATIVE CONFIRMED BY NURSE. CHRONIC HEADACHES SINCE MVA. SEEN BY DR PRZYBYLSKI."
+    ]
+  },
+  "00120055": {
+    "vr": "LO",
+    "Value": [
+      "MRN784300055"
+    ]
+  },
+  "00120060": {
+    "vr": "LO",
+    "Value": [
+      "BRANNOCK VALLEY HOSPITAL"
+    ]
+  },
+  "00120071": {
+    "vr": "LO",
+    "Value": [
+      "PID236438521"
+    ]
+  },
+  "00120072": {
+    "vr": "LO",
+    "Value": [
+      "POST OP LEFT KNEE ARTHROPLASTY DR ELLSWORTH"
+    ]
+  },
+  "00120073": {
+    "vr": "LO",
+    "Value": [
+      "PID202771663"
+    ]
+  },
+  "00120081": {
+    "vr": "LO",
+    "Value": [
+      "WEXLEY FALLS IMAGING ASSOCIATES"
+    ]
+  },
+  "00120082": {
+    "vr": "LO",
+    "Value": [
+      "MRN837829750"
+    ]
+  },
+  "00120086": {
+    "vr": "DA",
+    "Value": [
+      "19850102"
+    ]
+  },
+  "00120087": {
+    "vr": "DA",
+    "Value": [
+      "19631014"
+    ]
+  },
+  "0014407C": {
+    "vr": "TM",
+    "Value": [
+      "131600.698"
+    ]
+  },
+  "0014407E": {
+    "vr": "DA",
+    "Value": [
+      "19450118"
+    ]
+  },
+  "0016002B": {
+    "vr": "OB",
+    "InlineBinary": "REVWSUNFIFNFVFRJTkdTIFBST0ZJTEUgT0YgTklLT0xBSSBUQU5BS0EA"
+  },
+  "0016004B": {
+    "vr": "OB",
+    "InlineBinary": "Q0VSVElGSUNBVEUgSVNTVUVEIFRPIE5JS09MQUkgS09XQUxTS0k="
+  },
+  "0016004D": {
+    "vr": "UT",
+    "Value": [
+      "PATIENT ARRIVED FROM ER BY WHEELCHAIR. PT CLAUSTROPHOBIC SEDATED PER DR REQUEST. SEEN BY DR DESAI."
+    ]
+  },
+  "0016004E": {
+    "vr": "DS",
+    "Value": [
+      21.857,
+      214.609,
+      76.174,
+      49.636
+    ]
+  },
+  "0016004F": {
+    "vr": "UT",
+    "Value": [
+      "REPEAT SCAN DUE TO MOTION. FOLLOW UP MRI BRAIN W WO CONTRAST. SEEN BY DR HALVORSEN."
+    ]
+  },
+  "00160050": {
+    "vr": "UT",
+    "Value": [
+      "PATIENT ARRIVED FROM ER BY WHEELCHAIR. CONTRAST ALLERGY PREMEDICATED. SEEN BY DR VOLKOV."
+    ]
+  },
+  "00160051": {
+    "vr": "UT",
+    "Value": [
+      "CONTRAST ALLERGY PREMEDICATED. HX OF FALL AT HOME LAST TUESDAY. SEEN BY DR LACHANCE."
+    ]
+  },
+  "00160070": {
+    "vr": "OB",
+    "InlineBinary": "AgMAAA=="
+  },
+  "00160071": {
+    "vr": "CS",
+    "Value": [
+      "N"
+    ]
+  },
+  "00160072": {
+    "vr": "DS",
+    "Value": [
+      445.46,
+      445.796,
+      393.209
+    ]
+  },
+  "00160073": {
+    "vr": "CS",
+    "Value": [
+      "W"
+    ]
+  },
+  "00160074": {
+    "vr": "DS",
+    "Value": [
+      584.962,
+      435.249,
+      158.915
+    ]
+  },
+  "00160075": {
+    "vr": "US",
+    "Value": [
+      0
+    ]
+  },
+  "00160076": {
+    "vr": "DS",
+    "Value": [
+      680.453
+    ]
+  },
+  "00160077": {
+    "vr": "DT",
+    "Value": [
+      "19941109071852.360553"
+    ]
+  },
+  "00160078": {
+    "vr": "UT",
+    "Value": [
+      "HX OF FALL AT HOME LAST TUESDAY. PATIENT ARRIVED FROM ER BY WHEELCHAIR. SEEN BY DR DESAI."
+    ]
+  },
+  "00160079": {
+    "vr": "CS",
+    "Value": [
+      "A"
+    ]
+  },
+  "0016007A": {
+    "vr": "CS",
+    "Value": [
+      "3"
+    ]
+  },
+  "0016007B": {
+    "vr": "DS",
+    "Value": [
+      167.747
+    ]
+  },
+  "0016007C": {
+    "vr": "CS",
+    "Value": [
+      "K"
+    ]
+  },
+  "0016007D": {
+    "vr": "DS",
+    "Value": [
+      717.161
+    ]
+  },
+  "0016007E": {
+    "vr": "CS",
+    "Value": [
+      "T"
+    ]
+  },
+  "0016007F": {
+    "vr": "DS",
+    "Value": [
+      990.435
+    ]
+  },
+  "00160080": {
+    "vr": "CS",
+    "Value": [
+      "M"
+    ]
+  },
+  "00160081": {
+    "vr": "DS",
+    "Value": [
+      419.584
+    ]
+  },
+  "00160082": {
+    "vr": "UT",
+    "Value": [
+      "TRANSFERRED FROM OUTSIDE FACILITY. HX OF FALL AT HOME LAST TUESDAY. SEEN BY DR FAIRCLOUGH."
+    ]
+  },
+  "00160083": {
+    "vr": "CS",
+    "Value": [
+      "N"
+    ]
+  },
+  "00160084": {
+    "vr": "DS",
+    "Value": [
+      940.479,
+      317.558,
+      480.138
+    ]
+  },
+  "00160085": {
+    "vr": "CS",
+    "Value": [
+      "W"
+    ]
+  },
+  "00160086": {
+    "vr": "DS",
+    "Value": [
+      327.706,
+      879.161,
+      482.79
+    ]
+  },
+  "00160087": {
+    "vr": "CS",
+    "Value": [
+      "T"
+    ]
+  },
+  "00160088": {
+    "vr": "DS",
+    "Value": [
+      379.699
+    ]
+  },
+  "00160089": {
+    "vr": "CS",
+    "Value": [
+      "K"
+    ]
+  },
+  "0016008A": {
+    "vr": "DS",
+    "Value": [
+      974.235
+    ]
+  },
+  "0016008B": {
+    "vr": "OB",
+    "InlineBinary": "REVWSUNFIFNFVFRJTkdTIFBST0ZJTEUgT0YgVUxMQSBCUkVOTkFOAA=="
+  },
+  "0016008C": {
+    "vr": "OB",
+    "InlineBinary": "R1BTIEZJWCBCWSBDRUxMIFRPV0VSIEZBVElNQSBGQUlSQ0xPVUdIAA=="
+  },
+  "0016008D": {
+    "vr": "DT",
+    "Value": [
+      "19721231121251.718053"
+    ]
+  },
+  "0016008E": {
+    "vr": "IS",
+    "Value": [
+      0
+    ]
+  },
+  "00180010": {
+    "vr": "LO",
+    "Value": [
+      "PATIENT ARRIVED FROM ER BY WHEELCHAIR DR KOWALSKI"
+    ]
+  },
+  "00180027": {
+    "vr": "TM",
+    "Value": [
+      "051616.973"
+    ]
+  },
+  "00180035": {
+    "vr": "TM",
+    "Value": [
+      "232036.606"
+    ]
+  },
+  "00181000": {
+    "vr": "LO",
+    "Value": [
+      "PVC_US03"
+    ]
+  },
+  "00181002": {
+    "vr": "UI",
+    "Value": [
+      "2.25.233322057408528971618788290088466752485"
+    ]
+  },
+  "00181004": {
+    "vr": "LO",
+    "Value": [
+      "SN466367013"
+    ]
+  },
+  "00181005": {
+    "vr": "LO",
+    "Value": [
+      "ACC472755759"
+    ]
+  },
+  "00181007": {
+    "vr": "LO",
+    "Value": [
+      "EID942753433"
+    ]
+  },
+  "00181008": {
+    "vr": "LO",
+    "Value": [
+      "RQ766390688"
+    ]
+  },
+  "00181009": {
+    "vr": "UT",
+    "Value": [
+      "PREGNANCY TEST NEGATIVE CONFIRMED BY NURSE. CHRONIC HEADACHES SINCE MVA. SEEN BY DR MARCHETTI."
+    ]
+  },
+  "0018100A": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "00181009": {
+          "vr": "UT",
+          "Value": [
+            "STAGING CT CHEST ABD PELVIS. COMPARE WITH PRIOR OUTSIDE STUDY. SEEN BY DR HALVORSEN."
+          ]
+        }
+      }
+    ]
+  },
+  "0018100B": {
+    "vr": "UI",
+    "Value": [
+      "2.25.185687536375138928044805947229534691345"
+    ]
+  },
+  "00181010": {
+    "vr": "LO",
+    "Value": [
+      "WFIA_MR04"
+    ]
+  },
+  "00181011": {
+    "vr": "LO",
+    "Value": [
+      "NTCH_DX02"
+    ]
+  },
+  "00181012": {
+    "vr": "DA",
+    "Value": [
+      "19891201"
+    ]
+  },
+  "00181014": {
+    "vr": "TM",
+    "Value": [
+      "135436.857"
+    ]
+  },
+  "00181030": {
+    "vr": "LO",
+    "Value": [
+      "ODILE CLINIC"
+    ]
+  },
+  "00181042": {
+    "vr": "TM",
+    "Value": [
+      "040655.328"
+    ]
+  },
+  "00181043": {
+    "vr": "TM",
+    "Value": [
+      "032502.575"
+    ]
+  },
+  "00181072": {
+    "vr": "TM",
+    "Value": [
+      "005718.683"
+    ]
+  },
+  "00181073": {
+    "vr": "TM",
+    "Value": [
+      "212201.145"
+    ]
+  },
+  "00181078": {
+    "vr": "DT",
+    "Value": [
+      "19740114003001.180595"
+    ]
+  },
+  "00181079": {
+    "vr": "DT",
+    "Value": [
+      "20181114190254.958264"
+    ]
+  },
+  "001811BB": {
+    "vr": "LO",
+    "Value": [
+      "FOLLOW UP MRI BRAIN W WO CONTRAST DR BRENNAN"
+    ]
+  },
+  "00181200": {
+    "vr": "DA",
+    "Value": [
+      "19840519"
+    ]
+  },
+  "00181201": {
+    "vr": "TM",
+    "Value": [
+      "025619.386"
+    ]
+  },
+  "00181202": {
+    "vr": "DT",
+    "Value": [
+      "20240306160120.432192"
+    ]
+  },
+  "00181203": {
+    "vr": "DT",
+    "Value": [
+      "19880422131908.449411"
+    ]
+  },
+  "00181204": {
+    "vr": "DA",
+    "Value": [
+      "19560917"
+    ]
+  },
+  "00181205": {
+    "vr": "DA",
+    "Value": [
+      "19920227"
+    ]
+  },
+  "00181400": {
+    "vr": "LO",
+    "Value": [
+      "CRUH_PT01"
+    ]
+  },
+  "00182042": {
+    "vr": "UI",
+    "Value": [
+      "2.25.206129447283866317472122552162481344677"
+    ]
+  },
+  "00184000": {
+    "vr": "LT",
+    "Value": [
+      "COMPARE WITH PRIOR OUTSIDE STUDY. RIGHT SHOULDER PAIN AFTER LIFTING. SEEN BY DR OKAFOR."
+    ]
+  },
+  "00185011": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "30100043": {
+          "vr": "ST",
+          "Value": [
+            "STAGING CT CHEST ABD PELVIS. FOLLOW UP MRI BRAIN W WO CONTRAST. SEEN BY DR KILBRIDE."
+          ]
+        }
+      }
+    ]
+  },
+  "0018700A": {
+    "vr": "SH",
+    "Value": [
+      "ACC175046085"
+    ]
+  },
+  "0018700C": {
+    "vr": "DA",
+    "Value": [
+      "19791018"
+    ]
+  },
+  "0018700E": {
+    "vr": "TM",
+    "Value": [
+      "224206.076"
+    ]
+  },
+  "00189074": {
+    "vr": "DT",
+    "Value": [
+      "19920731000354.062931"
+    ]
+  },
+  "00189151": {
+    "vr": "DT",
+    "Value": [
+      "19590226161730.595508"
+    ]
+  },
+  "00189185": {
+    "vr": "ST",
+    "Value": [
+      "R/O PULMONARY EMBOLISM. PT CLAUSTROPHOBIC SEDATED PER DR REQUEST. SEEN BY DR QUINTERO."
+    ]
+  },
+  "00189367": {
+    "vr": "UC",
+    "Value": [
+      "EID124740626"
+    ]
+  },
+  "00189369": {
+    "vr": "DT",
+    "Value": [
+      "19490409130308.866974"
+    ]
+  },
+  "0018936A": {
+    "vr": "DT",
+    "Value": [
+      "19680925185131.943297"
+    ]
+  },
+  "00189371": {
+    "vr": "UC",
+    "Value": [
+      "ORD625343459"
+    ]
+  },
+  "00189373": {
+    "vr": "ST",
+    "Value": [
+      "PREGNANCY TEST NEGATIVE CONFIRMED BY NURSE. POST OP LEFT KNEE ARTHROPLASTY. SEEN BY DR DESAI."
+    ]
+  },
+  "0018937B": {
+    "vr": "UT",
+    "Value": [
+      "R/O PULMONARY EMBOLISM. HX OF FALL AT HOME LAST TUESDAY. SEEN BY DR NAKAMURA."
+    ]
+  },
+  "0018937F": {
+    "vr": "UT",
+    "Value": [
+      "RESEARCH PROTOCOL ENROLLMENT VISIT. PT CLAUSTROPHOBIC SEDATED PER DR REQUEST. SEEN BY DR PRZYBYLSKI."
+    ]
+  },
+  "00189424": {
+    "vr": "LT",
+    "Value": [
+      "TRANSFERRED FROM OUTSIDE FACILITY. PREGNANCY TEST NEGATIVE CONFIRMED BY NURSE. SEEN BY DR ADEYEMI."
+    ]
+  },
+  "00189516": {
+    "vr": "DT",
+    "Value": [
+      "19480215110040.034498"
+    ]
+  },
+  "00189517": {
+    "vr": "DT",
+    "Value": [
+      "19910521202411.526784"
+    ]
+  },
+  "00189623": {
+    "vr": "DT",
+    "Value": [
+      "19680531195915.437100"
+    ]
+  },
+  "00189701": {
+    "vr": "DT",
+    "Value": [
+      "19851002183840.650095"
+    ]
+  },
+  "00189804": {
+    "vr": "DT",
+    "Value": [
+      "19890105142517.839129"
+    ]
+  },
+  "00189919": {
+    "vr": "DT",
+    "Value": [
+      "20180723195110.428917"
+    ]
+  },
+  "00189937": {
+    "vr": "LO",
+    "Value": [
+      "HX OF FALL AT HOME LAST TUESDAY DR STRAND"
+    ]
+  },
+  "0018A002": {
+    "vr": "DT",
+    "Value": [
+      "19740525230043.126435"
+    ]
+  },
+  "0018A003": {
+    "vr": "ST",
+    "Value": [
+      "POST OP LEFT KNEE ARTHROPLASTY. PREGNANCY TEST NEGATIVE CONFIRMED BY NURSE. SEEN BY DR HARGREAVES."
+    ]
+  },
+  "0020000D": {
+    "vr": "UI",
+    "Value": [
+      "2.25.22221006945454667906694108164009790607"
+    ]
+  },
+  "0020000E": {
+    "vr": "UI",
+    "Value": [
+      "2.25.92232277440868812953743100511387289333"
+    ]
+  },
+  "00200010": {
+    "vr": "SH",
+    "Value": [
+      "EID204824442"
+    ]
+  },
+  "00200027": {
+    "vr": "LO",
+    "Value": [
+      "R/O PULMONARY EMBOLISM DR HOLLOWAY"
+    ]
+  },
+  "00200052": {
+    "vr": "UI",
+    "Value": [
+      "2.25.134322810160230369856539103419296677845"
+    ]
+  },
+  "00200200": {
+    "vr": "UI",
+    "Value": [
+      "2.25.215660177181078193383662526360925164891"
+    ]
+  },
+  "00203401": {
+    "vr": "CS",
+    "Value": [
+      "BVH_QC47"
+    ]
+  },
+  "00203403": {
+    "vr": "DA",
+    "Value": [
+      "19780525"
+    ]
+  },
+  "00203405": {
+    "vr": "TM",
+    "Value": [
+      "020806.335"
+    ]
+  },
+  "00203406": {
+    "vr": "LO",
+    "Value": [
+      "POST OP LEFT KNEE ARTHROPLASTY DR IBARRA"
+    ]
+  },
+  "00204000": {
+    "vr": "LT",
+    "Value": [
+      "CONTRAST ALLERGY PREMEDICATED. CHRONIC HEADACHES SINCE MVA. SEEN BY DR HALVORSEN."
+    ]
+  },
+  "00209158": {
+    "vr": "LT",
+    "Value": [
+      "TRANSFERRED FROM OUTSIDE FACILITY. RESEARCH PROTOCOL ENROLLMENT VISIT. SEEN BY DR VASQUEZ."
+    ]
+  },
+  "00209161": {
+    "vr": "UI",
+    "Value": [
+      "2.25.53308962195753334826413869499823900161"
+    ]
+  },
+  "00209164": {
+    "vr": "UI",
+    "Value": [
+      "2.25.126196826982720607759571174403106617575"
+    ]
+  },
+  "00281199": {
+    "vr": "UI",
+    "Value": [
+      "2.25.230333030988762530172558886495441555275"
+    ]
+  },
+  "00281214": {
+    "vr": "UI",
+    "Value": [
+      "2.25.333355318122600223066017044315789335753"
+    ]
+  },
+  "00284000": {
+    "vr": "LT",
+    "Value": [
+      "COMPARE WITH PRIOR OUTSIDE STUDY. CONTRAST ALLERGY PREMEDICATED. SEEN BY DR NAKAMURA."
+    ]
+  },
+  "00320012": {
+    "vr": "LO",
+    "Value": [
+      "COMPARE WITH PRIOR OUTSIDE STUDY DR ABERNATHY"
+    ]
+  },
+  "00320032": {
+    "vr": "DA",
+    "Value": [
+      "20250725"
+    ]
+  },
+  "00320033": {
+    "vr": "TM",
+    "Value": [
+      "093704.364"
+    ]
+  },
+  "00320034": {
+    "vr": "DA",
+    "Value": [
+      "19760722"
+    ]
+  },
+  "00320035": {
+    "vr": "TM",
+    "Value": [
+      "151511.521"
+    ]
+  },
+  "00321000": {
+    "vr": "DA",
+    "Value": [
+      "19820314"
+    ]
+  },
+  "00321001": {
+    "vr": "TM",
+    "Value": [
+      "131723.206"
+    ]
+  },
+  "00321010": {
+    "vr": "DA",
+    "Value": [
+      "19901211"
+    ]
+  },
+  "00321011": {
+    "vr": "TM",
+    "Value": [
+      "105716.602"
+    ]
+  },
+  "00321020": {
+    "vr": "LO",
+    "Value": [
+      "NTCH_MR05"
+    ]
+  },
+  "00321021": {
+    "vr": "AE",
+    "Value": [
+      "CRUH_NM01"
+    ]
+  },
+  "00321030": {
+    "vr": "LO",
+    "Value": [
+      "REPEAT SCAN DUE TO MOTION DR KILBRIDE"
+    ]
+  },
+  "00321032": {
+    "vr": "PN",
+    "Value": [
+      {
+        "Alphabetic": "MORCOMBE^JOSEFINA^DEAN"
+      }
+    ]
+  },
+  "00321033": {
+    "vr": "LO",
+    "Value": [
+      "PREGNANCY TEST NEGATIVE CONFIRMED BY NURSE DR HARGREAVES"
+    ]
+  },
+  "00321040": {
+    "vr": "DA",
+    "Value": [
+      "19810902"
+    ]
+  },
+  "00321041": {
+    "vr": "TM",
+    "Value": [
+      "060751.540"
+    ]
+  },
+  "00321050": {
+    "vr": "DA",
+    "Value": [
+      "19840112"
+    ]
+  },
+  "00321051": {
+    "vr": "TM",
+    "Value": [
+      "234344.307"
+    ]
+  },
+  "00321060": {
+    "vr": "LO",
+    "Value": [
+      "PT CLAUSTROPHOBIC SEDATED PER DR REQUEST DR ROSSITER"
+    ]
+  },
+  "00321066": {
+    "vr": "UT",
+    "Value": [
+      "R/O PULMONARY EMBOLISM. PATIENT ARRIVED FROM ER BY WHEELCHAIR. SEEN BY DR QUINTERO."
+    ]
+  },
+  "00321067": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "00080106": {
+          "vr": "DT",
+          "Value": [
+            "19600111034110.994410"
+          ]
+        }
+      }
+    ]
+  },
+  "00321070": {
+    "vr": "LO",
+    "Value": [
+      "COMPARE WITH PRIOR OUTSIDE STUDY DR HOLLOWAY"
+    ]
+  },
+  "00324000": {
+    "vr": "LT",
+    "Value": [
+      "POST OP LEFT KNEE ARTHROPLASTY. CONTRAST ALLERGY PREMEDICATED. SEEN BY DR ROSSITER."
+    ]
+  },
+  "00340001": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "00340002": {
+          "vr": "OB",
+          "InlineBinary": "U0NBTk5FRCBSRVFVSVNJVElPTiBGT1JNIEZPUiBDT1JNQUMgSE9MTE9XQVk="
+        }
+      }
+    ]
+  },
+  "00340002": {
+    "vr": "OB",
+    "InlineBinary": "R1BTIEZJWCBCWSBDRUxMIFRPV0VSIFVMTEEgQ0FTVEVMTEFOTwA="
+  },
+  "00340005": {
+    "vr": "OB",
+    "InlineBinary": "U0NBTk5FRCBSRVFVSVNJVElPTiBGT1JNIEZPUiBDT1JNQUMgTkFLQU1VUkE="
+  },
+  "00340007": {
+    "vr": "OB",
+    "InlineBinary": "U0NBTk5FRCBSRVFVSVNJVElPTiBGT1JNIEZPUiBBREFFWkUgUVVJTlRFUk8="
+  },
+  "00380004": {
+    "vr": "SQ",
+    "Value": [
+      {}
+    ]
+  },
+  "00380010": {
+    "vr": "LO",
+    "Value": [
+      "SN495510258"
+    ]
+  },
+  "00380011": {
+    "vr": "LO",
+    "Value": [
+      "SN261309860"
+    ]
+  },
+  "00380014": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "00400032": {
+          "vr": "UT",
+          "Value": [
+            "PREGNANCY TEST NEGATIVE CONFIRMED BY NURSE. PT CLAUSTROPHOBIC SEDATED PER DR REQUEST. SEEN BY DR DESAI."
+          ]
+        }
+      }
+    ]
+  },
+  "0038001A": {
+    "vr": "DA",
+    "Value": [
+      "19570701"
+    ]
+  },
+  "0038001B": {
+    "vr": "TM",
+    "Value": [
+      "154730.311"
+    ]
+  },
+  "0038001C": {
+    "vr": "DA",
+    "Value": [
+      "19580826"
+    ]
+  },
+  "0038001D": {
+    "vr": "TM",
+    "Value": [
+      "173521.251"
+    ]
+  },
+  "0038001E": {
+    "vr": "LO",
+    "Value": [
+      "WEXLEY FALLS RESEARCH GROUP"
+    ]
+  },
+  "00380020": {
+    "vr": "DA",
+    "Value": [
+      "19920322"
+    ]
+  },
+  "00380021": {
+    "vr": "TM",
+    "Value": [
+      "222946.445"
+    ]
+  },
+  "00380030": {
+    "vr": "DA",
+    "Value": [
+      "20190710"
+    ]
+  },
+  "00380032": {
+    "vr": "TM",
+    "Value": [
+      "141242.911"
+    ]
+  },
+  "00380040": {
+    "vr": "LO",
+    "Value": [
+      "REPEAT SCAN DUE TO MOTION DR MBEKI"
+    ]
+  },
+  "00380050": {
+    "vr": "LO",
+    "Value": [
+      "PREGNANCY TEST NEGATIVE CONFIRMED BY NURSE DR HALVORSEN"
+    ]
+  },
+  "00380060": {
+    "vr": "LO",
+    "Value": [
+      "EID741252350"
+    ]
+  },
+  "00380061": {
+    "vr": "LO",
+    "Value": [
+      "PID823111175"
+    ]
+  },
+  "00380062": {
+    "vr": "LO",
+    "Value": [
+      "STAGING CT CHEST ABD PELVIS DR THORNBURY"
+    ]
+  },
+  "00380064": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "00400031": {
+          "vr": "UT",
+          "Value": [
+            "PREGNANCY TEST NEGATIVE CONFIRMED BY NURSE. RIGHT SHOULDER PAIN AFTER LIFTING. SEEN BY DR PEMBERTON."
+          ]
+        }
+      }
+    ]
+  },
+  "00380300": {
+    "vr": "LO",
+    "Value": [
+      "NTCH_NM01"
+    ]
+  },
+  "00380400": {
+    "vr": "LO",
+    "Value": [
+      "BRANNOCK TRIAL UNIT"
+    ]
+  },
+  "00380500": {
+    "vr": "LO",
+    "Value": [
+      "PT CLAUSTROPHOBIC SEDATED PER DR REQUEST DR ABERNATHY"
+    ]
+  },
+  "00384000": {
+    "vr": "LT",
+    "Value": [
+      "R/O PULMONARY EMBOLISM. TRANSFERRED FROM OUTSIDE FACILITY. SEEN BY DR NAKAMURA."
+    ]
+  },
+  "003A0020": {
+    "vr": "SH",
+    "Value": [
+      "BRAIN PERF V8"
+    ]
+  },
+  "003A0203": {
+    "vr": "SH",
+    "Value": [
+      "NECK SOFT V6"
+    ]
+  },
+  "003A020C": {
+    "vr": "LO",
+    "Value": [
+      "RESEARCH PROTOCOL ENROLLMENT VISIT DR QUINTERO"
+    ]
+  },
+  "003A0310": {
+    "vr": "UI",
+    "Value": [
+      "2.25.268846595244731083380691224300302388663"
+    ]
+  },
+  "003A0314": {
+    "vr": "DT",
+    "Value": [
+      "19480301002813.034895"
+    ]
+  },
+  "003A0329": {
+    "vr": "ST",
+    "Value": [
+      "PATIENT ARRIVED FROM ER BY WHEELCHAIR. COMPARE WITH PRIOR OUTSIDE STUDY. SEEN BY DR ELLSWORTH."
+    ]
+  },
+  "003A032B": {
+    "vr": "ST",
+    "Value": [
+      "HX OF FALL AT HOME LAST TUESDAY. CONTRAST ALLERGY PREMEDICATED. SEEN BY DR LINDQVIST."
+    ]
+  },
+  "00400001": {
+    "vr": "AE",
+    "Value": [
+      "ACI_MR07"
+    ]
+  },
+  "00400002": {
+    "vr": "DA",
+    "Value": [
+      "19951107"
+    ]
+  },
+  "00400003": {
+    "vr": "TM",
+    "Value": [
+      "230506.894"
+    ]
+  },
+  "00400004": {
+    "vr": "DA",
+    "Value": [
+      "19640301"
+    ]
+  },
+  "00400005": {
+    "vr": "TM",
+    "Value": [
+      "150029.007"
+    ]
+  },
+  "00400006": {
+    "vr": "PN",
+    "Value": [
+      {
+        "Alphabetic": "MARCHETTI^YUKI^LEE"
+      }
+    ]
+  },
+  "00400007": {
+    "vr": "LO",
+    "Value": [
+      "RIGHT SHOULDER PAIN AFTER LIFTING DR VOLKOV"
+    ]
+  },
+  "00400009": {
+    "vr": "SH",
+    "Value": [
+      "MRN612797763"
+    ]
+  },
+  "0040000B": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "00401102": {
+          "vr": "ST",
+          "Value": [
+            "PT CLAUSTROPHOBIC SEDATED PER DR REQUEST. CHRONIC HEADACHES SINCE MVA. SEEN BY DR ADEYEMI."
+          ]
+        }
+      }
+    ]
+  },
+  "00400010": {
+    "vr": "SH",
+    "Value": [
+      "CRUH_MR07"
+    ]
+  },
+  "00400011": {
+    "vr": "SH",
+    "Value": [
+      "BVH_US02"
+    ]
+  },
+  "00400012": {
+    "vr": "LO",
+    "Value": [
+      "R/O PULMONARY EMBOLISM DR PEMBERTON"
+    ]
+  },
+  "00400241": {
+    "vr": "AE",
+    "Value": [
+      "SOCH_CT01"
+    ]
+  },
+  "00400242": {
+    "vr": "SH",
+    "Value": [
+      "HCRMC_CT08"
+    ]
+  },
+  "00400243": {
+    "vr": "SH",
+    "Value": [
+      "ACI_NM06"
+    ]
+  },
+  "00400244": {
+    "vr": "DA",
+    "Value": [
+      "19970912"
+    ]
+  },
+  "00400245": {
+    "vr": "TM",
+    "Value": [
+      "112454.598"
+    ]
+  },
+  "00400250": {
+    "vr": "DA",
+    "Value": [
+      "19700315"
+    ]
+  },
+  "00400251": {
+    "vr": "TM",
+    "Value": [
+      "105604.307"
+    ]
+  },
+  "00400253": {
+    "vr": "SH",
+    "Value": [
+      "SN191602931"
+    ]
+  },
+  "00400254": {
+    "vr": "LO",
+    "Value": [
+      "STAGING CT CHEST ABD PELVIS DR ABERNATHY"
+    ]
+  },
+  "00400275": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "00321060": {
+          "vr": "LO",
+          "Value": [
+            "FOLLOW UP MRI BRAIN W WO CONTRAST DR HOLLOWAY"
+          ]
+        }
+      }
+    ]
+  },
+  "00400280": {
+    "vr": "ST",
+    "Value": [
+      "REPEAT SCAN DUE TO MOTION. RIGHT SHOULDER PAIN AFTER LIFTING. SEEN BY DR ABERNATHY."
+    ]
+  },
+  "00400310": {
+    "vr": "ST",
+    "Value": [
+      "HX OF FALL AT HOME LAST TUESDAY. PREGNANCY TEST NEGATIVE CONFIRMED BY NURSE. SEEN BY DR THORNBURY."
+    ]
+  },
+  "0040050A": {
+    "vr": "LO",
+    "Value": [
+      "MRN757999800"
+    ]
+  },
+  "00400512": {
+    "vr": "LO",
+    "Value": [
+      "RQ127414242"
+    ]
+  },
+  "00400513": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "00400032": {
+          "vr": "UT",
+          "Value": [
+            "SCREENING MAMMOGRAM ANNUAL. PT CLAUSTROPHOBIC SEDATED PER DR REQUEST. SEEN BY DR ROSSITER."
+          ]
+        }
+      }
+    ]
+  },
+  "0040051A": {
+    "vr": "LO",
+    "Value": [
+      "R/O PULMONARY EMBOLISM DR VASQUEZ"
+    ]
+  },
+  "00400551": {
+    "vr": "LO",
+    "Value": [
+      "ACC580948581"
+    ]
+  },
+  "00400554": {
+    "vr": "UI",
+    "Value": [
+      "2.25.59103230813634464574613295832711040847"
+    ]
+  },
+  "00400555": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "0040A121": {
+          "vr": "DA",
+          "Value": [
+            "20251231"
+          ]
+        }
+      }
+    ]
+  },
+  "00400556": {
+    "vr": "ST",
+    "Value": [
+      "CONTRAST ALLERGY PREMEDICATED. R/O PULMONARY EMBOLISM. SEEN BY DR STRAND."
+    ]
+  },
+  "00400562": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "00400031": {
+          "vr": "UT",
+          "Value": [
+            "CHRONIC HEADACHES SINCE MVA. PATIENT ARRIVED FROM ER BY WHEELCHAIR. SEEN BY DR GALLAGHER."
+          ]
+        }
+      }
+    ]
+  },
+  "00400600": {
+    "vr": "LO",
+    "Value": [
+      "COMPARE WITH PRIOR OUTSIDE STUDY DR IBARRA"
+    ]
+  },
+  "00400602": {
+    "vr": "UT",
+    "Value": [
+      "CHRONIC HEADACHES SINCE MVA. POST OP LEFT KNEE ARTHROPLASTY. SEEN BY DR WHITFORD."
+    ]
+  },
+  "00400610": {
+    "vr": "SQ",
+    "Value": [
+      {}
+    ]
+  },
+  "004006FA": {
+    "vr": "LO",
+    "Value": [
+      "EID299062598"
+    ]
+  },
+  "00401001": {
+    "vr": "SH",
+    "Value": [
+      "ORD835721317"
+    ]
+  },
+  "00401002": {
+    "vr": "LO",
+    "Value": [
+      "CHRONIC HEADACHES SINCE MVA DR DESAI"
+    ]
+  },
+  "00401004": {
+    "vr": "LO",
+    "Value": [
+      "STAGING CT CHEST ABD PELVIS DR MBEKI"
+    ]
+  },
+  "00401005": {
+    "vr": "LO",
+    "Value": [
+      "ACI_MR03"
+    ]
+  },
+  "0040100A": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "00080106": {
+          "vr": "DT",
+          "Value": [
+            "19710514233852.725374"
+          ]
+        }
+      }
+    ]
+  },
+  "00401010": {
+    "vr": "PN",
+    "Value": [
+      {
+        "Alphabetic": "TANAKA^ADAEZE^ROSE"
+      }
+    ]
+  },
+  "00401011": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "00081040": {
+          "vr": "LO",
+          "Value": [
+            "CARDIOLOGY SOCH"
+          ]
+        }
+      }
+    ]
+  },
+  "00401101": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "00080106": {
+          "vr": "DT",
+          "Value": [
+            "19571025103927.234451"
+          ]
+        }
+      }
+    ]
+  },
+  "00401102": {
+    "vr": "ST",
+    "Value": [
+      "PREGNANCY TEST NEGATIVE CONFIRMED BY NURSE. COMPARE WITH PRIOR OUTSIDE STUDY. SEEN BY DR VOLKOV."
+    ]
+  },
+  "00401103": {
+    "vr": "LO",
+    "Value": [
+      "701-555-0126"
+    ]
+  },
+  "00401104": {
+    "vr": "LT",
+    "Value": [
+      "PREGNANCY TEST NEGATIVE CONFIRMED BY NURSE. RIGHT SHOULDER PAIN AFTER LIFTING. SEEN BY DR TANAKA."
+    ]
+  },
+  "00401400": {
+    "vr": "LT",
+    "Value": [
+      "STAGING CT CHEST ABD PELVIS. CHRONIC HEADACHES SINCE MVA. SEEN BY DR DUBOIS."
+    ]
+  },
+  "00402001": {
+    "vr": "LO",
+    "Value": [
+      "PATIENT ARRIVED FROM ER BY WHEELCHAIR DR BRENNAN"
+    ]
+  },
+  "00402004": {
+    "vr": "DA",
+    "Value": [
+      "19481011"
+    ]
+  },
+  "00402005": {
+    "vr": "TM",
+    "Value": [
+      "133247.209"
+    ]
+  },
+  "00402008": {
+    "vr": "PN",
+    "Value": [
+      {
+        "Alphabetic": "CASTELLANO^KWAME^GRACE"
+      }
+    ]
+  },
+  "00402009": {
+    "vr": "SH",
+    "Value": [
+      "HCRMC_MR09"
+    ]
+  },
+  "00402010": {
+    "vr": "SH",
+    "Value": [
+      "775-555-0189"
+    ]
+  },
+  "00402011": {
+    "vr": "LT",
+    "Value": [
+      "PT CLAUSTROPHOBIC SEDATED PER DR REQUEST. STAGING CT CHEST ABD PELVIS. SEEN BY DR SANTOS."
+    ]
+  },
+  "00402016": {
+    "vr": "LO",
+    "Value": [
+      "MRN403925637"
+    ]
+  },
+  "00402017": {
+    "vr": "LO",
+    "Value": [
+      "ORD515396974"
+    ]
+  },
+  "00402400": {
+    "vr": "LT",
+    "Value": [
+      "SCREENING MAMMOGRAM ANNUAL. REPEAT SCAN DUE TO MOTION. SEEN BY DR VOLKOV."
+    ]
+  },
+  "00403001": {
+    "vr": "LO",
+    "Value": [
+      "SCREENING MAMMOGRAM ANNUAL DR ABERNATHY"
+    ]
+  },
+  "00404005": {
+    "vr": "DT",
+    "Value": [
+      "20180126185757.408166"
+    ]
+  },
+  "00404008": {
+    "vr": "DT",
+    "Value": [
+      "19660706020145.595284"
+    ]
+  },
+  "00404010": {
+    "vr": "DT",
+    "Value": [
+      "19790403000332.754573"
+    ]
+  },
+  "00404011": {
+    "vr": "DT",
+    "Value": [
+      "20110623224842.286644"
+    ]
+  },
+  "00404023": {
+    "vr": "UI",
+    "Value": [
+      "2.25.171184578099734518106417750694053931829"
+    ]
+  },
+  "00404025": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "00080107": {
+          "vr": "DT",
+          "Value": [
+            "19421130224238.475433"
+          ]
+        }
+      }
+    ]
+  },
+  "00404027": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "00080106": {
+          "vr": "DT",
+          "Value": [
+            "19460315125426.436715"
+          ]
+        }
+      }
+    ]
+  },
+  "00404028": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "00080106": {
+          "vr": "DT",
+          "Value": [
+            "19650130223234.167851"
+          ]
+        }
+      }
+    ]
+  },
+  "00404030": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "00080106": {
+          "vr": "DT",
+          "Value": [
+            "19780102044347.790939"
+          ]
+        }
+      }
+    ]
+  },
+  "00404034": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "00404037": {
+          "vr": "PN",
+          "Value": [
+            {
+              "Alphabetic": "MARCHETTI^FATIMA^ROSE"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "00404035": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "00404036": {
+          "vr": "LO",
+          "Value": [
+            "PINEMOOR IMAGING CENTER"
+          ]
+        }
+      }
+    ]
+  },
+  "00404036": {
+    "vr": "LO",
+    "Value": [
+      "NORTH TARRANT RESEARCH GROUP"
+    ]
+  },
+  "00404037": {
+    "vr": "PN",
+    "Value": [
+      {
+        "Alphabetic": "NAKAMURA^PRIYA^ANNE"
+      }
+    ]
+  },
+  "00404050": {
+    "vr": "DT",
+    "Value": [
+      "20241123110909.767524"
+    ]
+  },
+  "00404051": {
+    "vr": "DT",
+    "Value": [
+      "19730328031403.827348"
+    ]
+  },
+  "00404052": {
+    "vr": "DT",
+    "Value": [
+      "19500102210046.695549"
+    ]
+  },
+  "0040A023": {
+    "vr": "DA",
+    "Value": [
+      "20020119"
+    ]
+  },
+  "0040A024": {
+    "vr": "TM",
+    "Value": [
+      "065041.034"
+    ]
+  },
+  "0040A027": {
+    "vr": "LO",
+    "Value": [
+      "HOLLOW CREEK TRIAL UNIT"
+    ]
+  },
+  "0040A030": {
+    "vr": "DT",
+    "Value": [
+      "19681028110051.411990"
+    ]
+  },
+  "0040A032": {
+    "vr": "DT",
+    "Value": [
+      "20011006210204.749405"
+    ]
+  },
+  "0040A033": {
+    "vr": "DT",
+    "Value": [
+      "20230507113610.109394"
+    ]
+  },
+  "0040A034": {
+    "vr": "DT",
+    "Value": [
+      "19600130145244.484985"
+    ]
+  },
+  "0040A035": {
+    "vr": "DT",
+    "Value": [
+      "19940728052552.961000"
+    ]
+  },
+  "0040A073": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "0040A030": {
+          "vr": "DT",
+          "Value": [
+            "20230708201928.686825"
+          ]
+        }
+      }
+    ]
+  },
+  "0040A075": {
+    "vr": "PN",
+    "Value": [
+      {
+        "Alphabetic": "HOLLOWAY^PRIYA^PAUL"
+      }
+    ]
+  },
+  "0040A078": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "00080080": {
+          "vr": "LO",
+          "Value": [
+            "HOLLOW CREEK REGIONAL MEDICAL CENTER"
+          ]
+        }
+      }
+    ]
+  },
+  "0040A07A": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "00081040": {
+          "vr": "LO",
+          "Value": [
+            "MUSCULOSKELETAL WFIA"
+          ]
+        }
+      }
+    ]
+  },
+  "0040A07C": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "00080080": {
+          "vr": "LO",
+          "Value": [
+            "BRANNOCK LABORATORY"
+          ]
+        }
+      }
+    ]
+  },
+  "0040A082": {
+    "vr": "DT",
+    "Value": [
+      "19730419231935.093746"
+    ]
+  },
+  "0040A088": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "00080107": {
+          "vr": "DT",
+          "Value": [
+            "19401107103116.642076"
+          ]
+        }
+      }
+    ]
+  },
+  "0040A110": {
+    "vr": "DA",
+    "Value": [
+      "19801010"
+    ]
+  },
+  "0040A112": {
+    "vr": "TM",
+    "Value": [
+      "034507.813"
+    ]
+  },
+  "0040A120": {
+    "vr": "DT",
+    "Value": [
+      "19700602155756.867343"
+    ]
+  },
+  "0040A121": {
+    "vr": "DA",
+    "Value": [
+      "19690503"
+    ]
+  },
+  "0040A122": {
+    "vr": "TM",
+    "Value": [
+      "092628.107"
+    ]
+  },
+  "0040A123": {
+    "vr": "PN",
+    "Value": [
+      {
+        "Alphabetic": "IBARRA^INGRID^ANNE"
+      }
+    ]
+  },
+  "0040A124": {
+    "vr": "UI",
+    "Value": [
+      "2.25.53555030579923508121300728939320642107"
+    ]
+  },
+  "0040A13A": {
+    "vr": "DT",
+    "Value": [
+      "19930727162410.195096"
+    ]
+  },
+  "0040A171": {
+    "vr": "UI",
+    "Value": [
+      "2.25.47509091096345559370928884930829757203"
+    ]
+  },
+  "0040A172": {
+    "vr": "UI",
+    "Value": [
+      "2.25.60992871041035499387281473873460340261"
+    ]
+  },
+  "0040A192": {
+    "vr": "DA",
+    "Value": [
+      "19850211"
+    ]
+  },
+  "0040A193": {
+    "vr": "TM",
+    "Value": [
+      "121222.877"
+    ]
+  },
+  "0040A307": {
+    "vr": "PN",
+    "Value": [
+      {
+        "Alphabetic": "ADEYEMI^NIKOLAI^GRACE"
+      }
+    ]
+  },
+  "0040A352": {
+    "vr": "PN",
+    "Value": [
+      {
+        "Alphabetic": "MARCHETTI^IKECHUKWU^ROSE"
+      }
+    ]
+  },
+  "0040A353": {
+    "vr": "ST",
+    "Value": [
+      "STAGING CT CHEST ABD PELVIS. HX OF FALL AT HOME LAST TUESDAY. SEEN BY DR VOLKOV."
+    ]
+  },
+  "0040A354": {
+    "vr": "LO",
+    "Value": [
+      "541-555-0193"
+    ]
+  },
+  "0040A358": {
+    "vr": "SQ",
+    "Value": [
+      {}
+    ]
+  },
+  "0040A402": {
+    "vr": "UI",
+    "Value": [
+      "2.25.266277093516347393213409025173540551655"
+    ]
+  },
+  "0040A730": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "0070031A": {
+          "vr": "UI",
+          "Value": [
+            "2.25.312258735428210332929780922073623960653"
+          ]
+        }
+      }
+    ]
+  },
+  "0040B020": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "0040A13A": {
+          "vr": "DT",
+          "Value": [
+            "19410107035435.124129"
+          ]
+        }
+      }
+    ]
+  },
+  "0040B034": {
+    "vr": "DT",
+    "Value": [
+      "19990501163823.002153"
+    ]
+  },
+  "0040B036": {
+    "vr": "DT",
+    "Value": [
+      "20240102165704.869895"
+    ]
+  },
+  "0040B03B": {
+    "vr": "LT",
+    "Value": [
+      "PT CLAUSTROPHOBIC SEDATED PER DR REQUEST. STAGING CT CHEST ABD PELVIS. SEEN BY DR PEMBERTON."
+    ]
+  },
+  "0040B03F": {
+    "vr": "LO",
+    "Value": [
+      "POST OP LEFT KNEE ARTHROPLASTY DR VOLKOV"
+    ]
+  },
+  "0040DB06": {
+    "vr": "DT",
+    "Value": [
+      "19910727205549.014276"
+    ]
+  },
+  "0040DB07": {
+    "vr": "DT",
+    "Value": [
+      "20110220213544.625198"
+    ]
+  },
+  "0040DB0C": {
+    "vr": "UI",
+    "Value": [
+      "2.25.38767440710751648635555094293815612559"
+    ]
+  },
+  "0040DB0D": {
+    "vr": "UI",
+    "Value": [
+      "2.25.319968145182566122851791372869361492747"
+    ]
+  },
+  "0040E004": {
+    "vr": "DT",
+    "Value": [
+      "20131202073054.182996"
+    ]
+  },
+  "0040E012": {
+    "vr": "UR",
+    "Value": [
+      "https://pacs.odile.example/viewer?study=60321473"
+    ]
+  },
+  "00420011": {
+    "vr": "OB",
+    "InlineBinary": "R1BTIEZJWCBCWSBDRUxMIFRPV0VSIENPUk1BQyBNT1JDT01CRQA="
+  },
+  "00440004": {
+    "vr": "DT",
+    "Value": [
+      "19520324061901.974718"
+    ]
+  },
+  "0044000B": {
+    "vr": "DT",
+    "Value": [
+      "20081118084653.932200"
+    ]
+  },
+  "00440010": {
+    "vr": "DT",
+    "Value": [
+      "19810214032035.395016"
+    ]
+  },
+  "00440104": {
+    "vr": "DT",
+    "Value": [
+      "19760128074003.851471"
+    ]
+  },
+  "00440105": {
+    "vr": "DT",
+    "Value": [
+      "19640601115314.141391"
+    ]
+  },
+  "0050001B": {
+    "vr": "LO",
+    "Value": [
+      "EID523991898"
+    ]
+  },
+  "00500020": {
+    "vr": "LO",
+    "Value": [
+      "ACI_US04"
+    ]
+  },
+  "00500021": {
+    "vr": "ST",
+    "Value": [
+      "STAGING CT CHEST ABD PELVIS. FOLLOW UP MRI BRAIN W WO CONTRAST. SEEN BY DR ROSSITER."
+    ]
+  },
+  "00620021": {
+    "vr": "UI",
+    "Value": [
+      "2.25.64822418986016209661398642124613795519"
+    ]
+  },
+  "00640003": {
+    "vr": "UI",
+    "Value": [
+      "2.25.144253996712638979219190813970803918319"
+    ]
+  },
+  "00686226": {
+    "vr": "DT",
+    "Value": [
+      "20000422153318.996672"
+    ]
+  },
+  "00686270": {
+    "vr": "DT",
+    "Value": [
+      "20120916114138.078926"
+    ]
+  },
+  "006A0003": {
+    "vr": "UI",
+    "Value": [
+      "2.25.217730712850171017545720650165500764637"
+    ]
+  },
+  "006A0005": {
+    "vr": "LO",
+    "Value": [
+      "STAGING CT CHEST ABD PELVIS DR MORCOMBE"
+    ]
+  },
+  "006A0006": {
+    "vr": "UT",
+    "Value": [
+      "RESEARCH PROTOCOL ENROLLMENT VISIT. FOLLOW UP MRI BRAIN W WO CONTRAST. SEEN BY DR BRENNAN."
+    ]
+  },
+  "00700001": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "00700002": {
+          "vr": "CS",
+          "Value": [
+            "PVC_QC32"
+          ]
+        }
+      }
+    ]
+  },
+  "00700006": {
+    "vr": "ST",
+    "Value": [
+      "RESEARCH PROTOCOL ENROLLMENT VISIT. PATIENT ARRIVED FROM ER BY WHEELCHAIR. SEEN BY DR HALVORSEN."
+    ]
+  },
+  "00700082": {
+    "vr": "DA",
+    "Value": [
+      "19990317"
+    ]
+  },
+  "00700083": {
+    "vr": "TM",
+    "Value": [
+      "015536.557"
+    ]
+  },
+  "00700084": {
+    "vr": "PN",
+    "Value": [
+      {
+        "Alphabetic": "OKAFOR^HENRIK^LEE"
+      }
+    ]
+  },
+  "00700086": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "00401104": {
+          "vr": "LT",
+          "Value": [
+            "FOLLOW UP MRI BRAIN W WO CONTRAST. POST OP LEFT KNEE ARTHROPLASTY. SEEN BY DR VOLKOV."
+          ]
+        }
+      }
+    ]
+  },
+  "0070031A": {
+    "vr": "UI",
+    "Value": [
+      "2.25.339168289518555498824605592188253629787"
+    ]
+  },
+  "00701101": {
+    "vr": "UI",
+    "Value": [
+      "2.25.113545524565356396461041721192858807399"
+    ]
+  },
+  "00701102": {
+    "vr": "UI",
+    "Value": [
+      "2.25.104832472160005342327327911078003259991"
+    ]
+  },
+  "0072000A": {
+    "vr": "DT",
+    "Value": [
+      "19450203170208.163136"
+    ]
+  },
+  "0072005E": {
+    "vr": "AE",
+    "Value": [
+      "WFIA_DX01"
+    ]
+  },
+  "0072005F": {
+    "vr": "AS",
+    "Value": [
+      "047Y"
+    ]
+  },
+  "00720061": {
+    "vr": "DA",
+    "Value": [
+      "19630324"
+    ]
+  },
+  "00720063": {
+    "vr": "DT",
+    "Value": [
+      "20140709174559.978601"
+    ]
+  },
+  "00720065": {
+    "vr": "OB",
+    "InlineBinary": "Q0VSVElGSUNBVEUgSVNTVUVEIFRPIFJBRkFFTCBJQkFSUkEA"
+  },
+  "00720066": {
+    "vr": "LO",
+    "Value": [
+      "R/O PULMONARY EMBOLISM DR MBEKI"
+    ]
+  },
+  "00720068": {
+    "vr": "LT",
+    "Value": [
+      "PATIENT ARRIVED FROM ER BY WHEELCHAIR. RESEARCH PROTOCOL ENROLLMENT VISIT. SEEN BY DR TANAKA."
+    ]
+  },
+  "0072006A": {
+    "vr": "PN",
+    "Value": [
+      {
+        "Alphabetic": "HARGREAVES^MATEO^DEAN"
+      }
+    ]
+  },
+  "0072006B": {
+    "vr": "TM",
+    "Value": [
+      "063546.819"
+    ]
+  },
+  "0072006C": {
+    "vr": "SH",
+    "Value": [
+      "CARDIAC CTA V2"
+    ]
+  },
+  "0072006D": {
+    "vr": "UN",
+    "InlineBinary": "VkVORE9SIE1BS0VSTk9URSBTRVJJQUwgRkFUSU1BIE5BS0FNVVJBAA=="
+  },
+  "0072006E": {
+    "vr": "ST",
+    "Value": [
+      "REPEAT SCAN DUE TO MOTION. COMPARE WITH PRIOR OUTSIDE STUDY. SEEN BY DR HARGREAVES."
+    ]
+  },
+  "00720070": {
+    "vr": "UT",
+    "Value": [
+      "RESEARCH PROTOCOL ENROLLMENT VISIT. RIGHT SHOULDER PAIN AFTER LIFTING. SEEN BY DR OYELARAN."
+    ]
+  },
+  "00720071": {
+    "vr": "UR",
+    "Value": [
+      "https://pacs.wexleyfalls.example/viewer?study=23878438"
+    ]
+  },
+  "00741234": {
+    "vr": "AE",
+    "Value": [
+      "HCRMC_US06"
+    ]
+  },
+  "00741236": {
+    "vr": "AE",
+    "Value": [
+      "SOCH_DX03"
+    ]
+  },
+  "00880140": {
+    "vr": "UI",
+    "Value": [
+      "2.25.253013501661362906274835121272715859177"
+    ]
+  },
+  "00880200": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "00282000": {
+          "vr": "OB",
+          "InlineBinary": "REVWSUNFIFNFVFRJTkdTIFBST0ZJTEUgT0YgTklLT0xBSSBPS0FGT1IA"
+        }
+      }
+    ]
+  },
+  "00880904": {
+    "vr": "LO",
+    "Value": [
+      "SCREENING MAMMOGRAM ANNUAL DR MARCHETTI"
+    ]
+  },
+  "00880906": {
+    "vr": "ST",
+    "Value": [
+      "RIGHT SHOULDER PAIN AFTER LIFTING. FOLLOW UP MRI BRAIN W WO CONTRAST. SEEN BY DR NAKAMURA."
+    ]
+  },
+  "00880910": {
+    "vr": "LO",
+    "Value": [
+      "R/O PULMONARY EMBOLISM DR VOLKOV"
+    ]
+  },
+  "00880912": {
+    "vr": "LO",
+    "Value": [
+      "HX OF FALL AT HOME LAST TUESDAY DR IBARRA"
+    ]
+  },
+  "01000420": {
+    "vr": "DT",
+    "Value": [
+      "20220204194934.895530"
+    ]
+  },
+  "04000100": {
+    "vr": "UI",
+    "Value": [
+      "2.25.103033188687406909781228238090330204587"
+    ]
+  },
+  "04000105": {
+    "vr": "DT",
+    "Value": [
+      "19480125230601.232609"
+    ]
+  },
+  "04000115": {
+    "vr": "OB",
+    "InlineBinary": "REVWSUNFIFNFVFRJTkdTIFBST0ZJTEUgT0YgUFJJWUEgTkFLQU1VUkEA"
+  },
+  "04000310": {
+    "vr": "OB",
+    "InlineBinary": "U0NBTk5FRCBSRVFVSVNJVElPTiBGT1JNIEZPUiBCRUFUUklaIFFVSU5URVJPAA=="
+  },
+  "04000402": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "04000100": {
+          "vr": "UI",
+          "Value": [
+            "2.25.195278480935589667027673862134451402317"
+          ]
+        }
+      }
+    ]
+  },
+  "04000403": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "04000404": {
+          "vr": "OB",
+          "InlineBinary": "R1BTIEZJWCBCWSBDRUxMIFRPV0VSIFBSSVlBIFJPU1NJVEVS"
+        }
+      }
+    ]
+  },
+  "04000404": {
+    "vr": "OB",
+    "InlineBinary": "Q0VSVElGSUNBVEUgSVNTVUVEIFRPIFBFVFJBIEFCRVJOQVRIWQA="
+  },
+  "04000550": {
+    "vr": "SQ",
+    "Value": [
+      {}
+    ]
+  },
+  "04000551": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "04000552": {
+          "vr": "OB",
+          "InlineBinary": "U0NBTk5FRCBSRVFVSVNJVElPTiBGT1JNIEZPUiBCRUFUUklaIENBU1RFTExBTk8A"
+        }
+      }
+    ]
+  },
+  "04000552": {
+    "vr": "OB",
+    "InlineBinary": "VkVORE9SIE1BS0VSTk9URSBTRVJJQUwgREFOSUVMIEhBUkdSRUFWRVMA"
+  },
+  "04000561": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "04000562": {
+          "vr": "DT",
+          "Value": [
+            "19811114151717.949180"
+          ]
+        }
+      }
+    ]
+  },
+  "04000562": {
+    "vr": "DT",
+    "Value": [
+      "19440831023903.942241"
+    ]
+  },
+  "04000563": {
+    "vr": "LO",
+    "Value": [
+      "POST OP LEFT KNEE ARTHROPLASTY DR WHITFORD"
+    ]
+  },
+  "04000564": {
+    "vr": "LO",
+    "Value": [
+      "REPEAT SCAN DUE TO MOTION DR GALLAGHER"
+    ]
+  },
+  "04000565": {
+    "vr": "CS",
+    "Value": [
+      "CORRECT"
+    ]
+  },
+  "04000600": {
+    "vr": "CS",
+    "Value": [
+      "LOCAL"
+    ]
+  },
+  "20300020": {
+    "vr": "LO",
+    "Value": [
+      "HX OF FALL AT HOME LAST TUESDAY DR LINDQVIST"
+    ]
+  },
+  "21000040": {
+    "vr": "DA",
+    "Value": [
+      "19890917"
+    ]
+  },
+  "21000050": {
+    "vr": "TM",
+    "Value": [
+      "164621.369"
+    ]
+  },
+  "21000070": {
+    "vr": "AE",
+    "Value": [
+      "NTCH_PT06"
+    ]
+  },
+  "21000140": {
+    "vr": "AE",
+    "Value": [
+      "WFIA_MR03"
+    ]
+  },
+  "22000002": {
+    "vr": "UT",
+    "Value": [
+      "RIGHT SHOULDER PAIN AFTER LIFTING. CONTRAST ALLERGY PREMEDICATED. SEEN BY DR ADEYEMI."
+    ]
+  },
+  "22000005": {
+    "vr": "LT",
+    "Value": [
+      "HX OF FALL AT HOME LAST TUESDAY. CONTRAST ALLERGY PREMEDICATED. SEEN BY DR THORNBURY."
+    ]
+  },
+  "30020121": {
+    "vr": "LO",
+    "Value": [
+      "ASHGROVE IMAGING CENTER"
+    ]
+  },
+  "30020123": {
+    "vr": "LT",
+    "Value": [
+      "REPEAT SCAN DUE TO MOTION. PT CLAUSTROPHOBIC SEDATED PER DR REQUEST. SEEN BY DR ELLSWORTH."
+    ]
+  },
+  "3004007F": {
+    "vr": "LO",
+    "Value": [
+      "HOLLOW CREEK RESEARCH GROUP"
+    ]
+  },
+  "30060002": {
+    "vr": "SH",
+    "Value": [
+      "CHEST PE V9"
+    ]
+  },
+  "30060004": {
+    "vr": "LO",
+    "Value": [
+      "NORTH TARRANT CLINIC"
+    ]
+  },
+  "30060006": {
+    "vr": "ST",
+    "Value": [
+      "COMPARE WITH PRIOR OUTSIDE STUDY. FOLLOW UP MRI BRAIN W WO CONTRAST. SEEN BY DR ABERNATHY."
+    ]
+  },
+  "30060008": {
+    "vr": "DA",
+    "Value": [
+      "19740613"
+    ]
+  },
+  "30060009": {
+    "vr": "TM",
+    "Value": [
+      "084404.967"
+    ]
+  },
+  "30060024": {
+    "vr": "UI",
+    "Value": [
+      "2.25.236369254415907234260216732549560111243"
+    ]
+  },
+  "30060026": {
+    "vr": "LO",
+    "Value": [
+      "ODILE LABORATORY"
+    ]
+  },
+  "30060028": {
+    "vr": "ST",
+    "Value": [
+      "PT CLAUSTROPHOBIC SEDATED PER DR REQUEST. STAGING CT CHEST ABD PELVIS. SEEN BY DR ELLSWORTH."
+    ]
+  },
+  "3006002D": {
+    "vr": "DT",
+    "Value": [
+      "20200713082223.102094"
+    ]
+  },
+  "3006002E": {
+    "vr": "DT",
+    "Value": [
+      "20190820094242.026461"
+    ]
+  },
+  "30060038": {
+    "vr": "LO",
+    "Value": [
+      "CONTRAST ALLERGY PREMEDICATED DR QUINTERO"
+    ]
+  },
+  "3006004D": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "00081010": {
+          "vr": "SH",
+          "Value": [
+            "WFIA_PT05"
+          ]
+        }
+      }
+    ]
+  },
+  "3006004E": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "00081010": {
+          "vr": "SH",
+          "Value": [
+            "PVC_US07"
+          ]
+        }
+      }
+    ]
+  },
+  "30060085": {
+    "vr": "SH",
+    "Value": [
+      "ABD PELVIS V1"
+    ]
+  },
+  "30060088": {
+    "vr": "ST",
+    "Value": [
+      "RESEARCH PROTOCOL ENROLLMENT VISIT. PT CLAUSTROPHOBIC SEDATED PER DR REQUEST. SEEN BY DR DESAI."
+    ]
+  },
+  "300600A6": {
+    "vr": "PN",
+    "Value": [
+      {
+        "Alphabetic": "BRENNAN^PETRA^GRACE"
+      }
+    ]
+  },
+  "300600C2": {
+    "vr": "UI",
+    "Value": [
+      "2.25.288292577688244435735758302099498049987"
+    ]
+  },
+  "30080024": {
+    "vr": "DA",
+    "Value": [
+      "20030429"
+    ]
+  },
+  "30080025": {
+    "vr": "TM",
+    "Value": [
+      "075504.427"
+    ]
+  },
+  "30080054": {
+    "vr": "DA",
+    "Value": [
+      "19431212"
+    ]
+  },
+  "30080056": {
+    "vr": "DA",
+    "Value": [
+      "20090118"
+    ]
+  },
+  "30080105": {
+    "vr": "LO",
+    "Value": [
+      "RQ764165649"
+    ]
+  },
+  "30080162": {
+    "vr": "DA",
+    "Value": [
+      "19840927"
+    ]
+  },
+  "30080164": {
+    "vr": "TM",
+    "Value": [
+      "025559.927"
+    ]
+  },
+  "30080166": {
+    "vr": "DA",
+    "Value": [
+      "19470115"
+    ]
+  },
+  "30080168": {
+    "vr": "TM",
+    "Value": [
+      "120659.416"
+    ]
+  },
+  "30080250": {
+    "vr": "DA",
+    "Value": [
+      "19921227"
+    ]
+  },
+  "30080251": {
+    "vr": "TM",
+    "Value": [
+      "145254.526"
+    ]
+  },
+  "300A0002": {
+    "vr": "SH",
+    "Value": [
+      "SPINE LUMB V5"
+    ]
+  },
+  "300A0003": {
+    "vr": "LO",
+    "Value": [
+      "BRANNOCK RESEARCH GROUP"
+    ]
+  },
+  "300A0004": {
+    "vr": "ST",
+    "Value": [
+      "RESEARCH PROTOCOL ENROLLMENT VISIT. FOLLOW UP MRI BRAIN W WO CONTRAST. SEEN BY DR OKAFOR."
+    ]
+  },
+  "300A0006": {
+    "vr": "DA",
+    "Value": [
+      "19760807"
+    ]
+  },
+  "300A0007": {
+    "vr": "TM",
+    "Value": [
+      "103059.096"
+    ]
+  },
+  "300A000B": {
+    "vr": "LO",
+    "Value": [
+      "FOLLOW UP MRI BRAIN W WO CONTRAST DR TANAKA"
+    ]
+  },
+  "300A000E": {
+    "vr": "ST",
+    "Value": [
+      "PT CLAUSTROPHOBIC SEDATED PER DR REQUEST. PATIENT ARRIVED FROM ER BY WHEELCHAIR. SEEN BY DR QUINTERO."
+    ]
+  },
+  "300A0013": {
+    "vr": "UI",
+    "Value": [
+      "2.25.8576124299936843599003797692134423819"
+    ]
+  },
+  "300A0016": {
+    "vr": "LO",
+    "Value": [
+      "REPEAT SCAN DUE TO MOTION DR IBARRA"
+    ]
+  },
+  "300A0054": {
+    "vr": "UI",
+    "Value": [
+      "2.25.104979324866303088450858439311648957061"
+    ]
+  },
+  "300A0072": {
+    "vr": "LO",
+    "Value": [
+      "STAGING CT CHEST ABD PELVIS DR PEMBERTON"
+    ]
+  },
+  "300A0083": {
+    "vr": "UI",
+    "Value": [
+      "2.25.201556499103177343960319600353641249065"
+    ]
+  },
+  "300A00B2": {
+    "vr": "SH",
+    "Value": [
+      "HCRMC_US07"
+    ]
+  },
+  "300A00C3": {
+    "vr": "ST",
+    "Value": [
+      "HX OF FALL AT HOME LAST TUESDAY. STAGING CT CHEST ABD PELVIS. SEEN BY DR ABERNATHY."
+    ]
+  },
+  "300A00DD": {
+    "vr": "ST",
+    "Value": [
+      "PATIENT ARRIVED FROM ER BY WHEELCHAIR. CHRONIC HEADACHES SINCE MVA. SEEN BY DR HALVORSEN."
+    ]
+  },
+  "300A0196": {
+    "vr": "ST",
+    "Value": [
+      "RIGHT SHOULDER PAIN AFTER LIFTING. PATIENT ARRIVED FROM ER BY WHEELCHAIR. SEEN BY DR SANTOS."
+    ]
+  },
+  "300A01A6": {
+    "vr": "ST",
+    "Value": [
+      "CONTRAST ALLERGY PREMEDICATED. RIGHT SHOULDER PAIN AFTER LIFTING. SEEN BY DR MARCHETTI."
+    ]
+  },
+  "300A01B2": {
+    "vr": "ST",
+    "Value": [
+      "CHRONIC HEADACHES SINCE MVA. REPEAT SCAN DUE TO MOTION. SEEN BY DR ABERNATHY."
+    ]
+  },
+  "300A0216": {
+    "vr": "LO",
+    "Value": [
+      "COMPARE WITH PRIOR OUTSIDE STUDY DR HARGREAVES"
+    ]
+  },
+  "300A022C": {
+    "vr": "DA",
+    "Value": [
+      "20000318"
+    ]
+  },
+  "300A022E": {
+    "vr": "TM",
+    "Value": [
+      "050633.577"
+    ]
+  },
+  "300A02EB": {
+    "vr": "LT",
+    "Value": [
+      "RIGHT SHOULDER PAIN AFTER LIFTING. R/O PULMONARY EMBOLISM. SEEN BY DR PRZYBYLSKI."
+    ]
+  },
+  "300A0608": {
+    "vr": "LO",
+    "Value": [
+      "PREGNANCY TEST NEGATIVE CONFIRMED BY NURSE DR NWOSU"
+    ]
+  },
+  "300A0609": {
+    "vr": "UI",
+    "Value": [
+      "2.25.91992340493445385800220556199433133973"
+    ]
+  },
+  "300A0611": {
+    "vr": "LO",
+    "Value": [
+      "MRN526967742"
+    ]
+  },
+  "300A0615": {
+    "vr": "LO",
+    "Value": [
+      "SOCH_CT08"
+    ]
+  },
+  "300A0619": {
+    "vr": "LO",
+    "Value": [
+      "HX OF FALL AT HOME LAST TUESDAY DR OYELARAN"
+    ]
+  },
+  "300A0623": {
+    "vr": "LO",
+    "Value": [
+      "PATIENT ARRIVED FROM ER BY WHEELCHAIR DR LACHANCE"
+    ]
+  },
+  "300A062A": {
+    "vr": "LO",
+    "Value": [
+      "SCREENING MAMMOGRAM ANNUAL DR VOLKOV"
+    ]
+  },
+  "300A0650": {
+    "vr": "UI",
+    "Value": [
+      "2.25.6540206099570054179389580748449228333"
+    ]
+  },
+  "300A0676": {
+    "vr": "ST",
+    "Value": [
+      "RIGHT SHOULDER PAIN AFTER LIFTING. SCREENING MAMMOGRAM ANNUAL. SEEN BY DR LINDQVIST."
+    ]
+  },
+  "300A067C": {
+    "vr": "SH",
+    "Value": [
+      "CHEST PE V8"
+    ]
+  },
+  "300A067D": {
+    "vr": "ST",
+    "Value": [
+      "RIGHT SHOULDER PAIN AFTER LIFTING. STAGING CT CHEST ABD PELVIS. SEEN BY DR ABERNATHY."
+    ]
+  },
+  "300A0700": {
+    "vr": "UI",
+    "Value": [
+      "2.25.13146042402801341866673759711604401163"
+    ]
+  },
+  "300A0734": {
+    "vr": "ST",
+    "Value": [
+      "FOLLOW UP MRI BRAIN W WO CONTRAST. PT CLAUSTROPHOBIC SEDATED PER DR REQUEST. SEEN BY DR STRAND."
+    ]
+  },
+  "300A0736": {
+    "vr": "DT",
+    "Value": [
+      "19951009094911.291136"
+    ]
+  },
+  "300A073A": {
+    "vr": "DT",
+    "Value": [
+      "19851023221331.781394"
+    ]
+  },
+  "300A0741": {
+    "vr": "DT",
+    "Value": [
+      "19950825071151.303407"
+    ]
+  },
+  "300A0742": {
+    "vr": "ST",
+    "Value": [
+      "PT CLAUSTROPHOBIC SEDATED PER DR REQUEST. PATIENT ARRIVED FROM ER BY WHEELCHAIR. SEEN BY DR HOLLOWAY."
+    ]
+  },
+  "300A0760": {
+    "vr": "DT",
+    "Value": [
+      "19670116140303.756542"
+    ]
+  },
+  "300A0783": {
+    "vr": "ST",
+    "Value": [
+      "REPEAT SCAN DUE TO MOTION. RESEARCH PROTOCOL ENROLLMENT VISIT. SEEN BY DR GALLAGHER."
+    ]
+  },
+  "300A0785": {
+    "vr": "UI",
+    "Value": [
+      "2.25.247959713738830894102743352123383687317"
+    ]
+  },
+  "300A078E": {
+    "vr": "LT",
+    "Value": [
+      "PREGNANCY TEST NEGATIVE CONFIRMED BY NURSE. CONTRAST ALLERGY PREMEDICATED. SEEN BY DR HARGREAVES."
+    ]
+  },
+  "300A0792": {
+    "vr": "LT",
+    "Value": [
+      "PREGNANCY TEST NEGATIVE CONFIRMED BY NURSE. SCREENING MAMMOGRAM ANNUAL. SEEN BY DR OKAFOR."
+    ]
+  },
+  "300A0794": {
+    "vr": "LT",
+    "Value": [
+      "PT CLAUSTROPHOBIC SEDATED PER DR REQUEST. POST OP LEFT KNEE ARTHROPLASTY. SEEN BY DR OYELARAN."
+    ]
+  },
+  "300A079A": {
+    "vr": "LO",
+    "Value": [
+      "TRANSFERRED FROM OUTSIDE FACILITY DR QUINTERO"
+    ]
+  },
+  "300C0113": {
+    "vr": "LO",
+    "Value": [
+      "CONTRAST ALLERGY PREMEDICATED DR STRAND"
+    ]
+  },
+  "300C0127": {
+    "vr": "DT",
+    "Value": [
+      "19680619155137.782364"
+    ]
+  },
+  "300E0004": {
+    "vr": "DA",
+    "Value": [
+      "19650607"
+    ]
+  },
+  "300E0005": {
+    "vr": "TM",
+    "Value": [
+      "163518.303"
+    ]
+  },
+  "300E0008": {
+    "vr": "PN",
+    "Value": [
+      {
+        "Alphabetic": "MARCHETTI^FATIMA^LOUISE"
+      }
+    ]
+  },
+  "30100006": {
+    "vr": "UI",
+    "Value": [
+      "2.25.7305361189271192345204726126832659851"
+    ]
+  },
+  "3010000B": {
+    "vr": "UI",
+    "Value": [
+      "2.25.235424578368513278726390997346662635913"
+    ]
+  },
+  "3010000F": {
+    "vr": "ST",
+    "Value": [
+      "COMPARE WITH PRIOR OUTSIDE STUDY. CHRONIC HEADACHES SINCE MVA. SEEN BY DR CASTELLANO."
+    ]
+  },
+  "30100013": {
+    "vr": "UI",
+    "Value": [
+      "2.25.126435291440615403821856178891760099841"
+    ]
+  },
+  "30100015": {
+    "vr": "UI",
+    "Value": [
+      "2.25.282117641349174281498527220499825711795"
+    ]
+  },
+  "30100017": {
+    "vr": "ST",
+    "Value": [
+      "CHRONIC HEADACHES SINCE MVA. REPEAT SCAN DUE TO MOTION. SEEN BY DR NAKAMURA."
+    ]
+  },
+  "3010001B": {
+    "vr": "UC",
+    "Value": [
+      "BVH_NM04"
+    ]
+  },
+  "3010002D": {
+    "vr": "LO",
+    "Value": [
+      "NTCH_PT01"
+    ]
+  },
+  "30100031": {
+    "vr": "UI",
+    "Value": [
+      "2.25.84456949876015218565702937424201762427"
+    ]
+  },
+  "30100033": {
+    "vr": "SH",
+    "Value": [
+      "NECK SOFT V9"
+    ]
+  },
+  "30100034": {
+    "vr": "LO",
+    "Value": [
+      "RIGHT SHOULDER PAIN AFTER LIFTING DR HARGREAVES"
+    ]
+  },
+  "30100035": {
+    "vr": "SH",
+    "Value": [
+      "HEAD ROUTINE V1"
+    ]
+  },
+  "30100036": {
+    "vr": "LO",
+    "Value": [
+      "BRANNOCK CLINIC"
+    ]
+  },
+  "30100037": {
+    "vr": "ST",
+    "Value": [
+      "CONTRAST ALLERGY PREMEDICATED. RESEARCH PROTOCOL ENROLLMENT VISIT. SEEN BY DR MBEKI."
+    ]
+  },
+  "30100038": {
+    "vr": "LO",
+    "Value": [
+      "CONTRAST ALLERGY PREMEDICATED DR WHITFORD"
+    ]
+  },
+  "3010003B": {
+    "vr": "UI",
+    "Value": [
+      "2.25.313766529532604567692263404939771720325"
+    ]
+  },
+  "30100043": {
+    "vr": "ST",
+    "Value": [
+      "TRANSFERRED FROM OUTSIDE FACILITY. POST OP LEFT KNEE ARTHROPLASTY. SEEN BY DR HARGREAVES."
+    ]
+  },
+  "3010004C": {
+    "vr": "DA",
+    "Value": [
+      "20250810"
+    ]
+  },
+  "3010004D": {
+    "vr": "DA",
+    "Value": [
+      "19960129"
+    ]
+  },
+  "30100054": {
+    "vr": "LO",
+    "Value": [
+      "PT CLAUSTROPHOBIC SEDATED PER DR REQUEST DR VOLKOV"
+    ]
+  },
+  "30100056": {
+    "vr": "LO",
+    "Value": [
+      "PATIENT ARRIVED FROM ER BY WHEELCHAIR DR ABERNATHY"
+    ]
+  },
+  "3010005A": {
+    "vr": "UT",
+    "Value": [
+      "RESEARCH PROTOCOL ENROLLMENT VISIT. CONTRAST ALLERGY PREMEDICATED. SEEN BY DR PEMBERTON."
+    ]
+  },
+  "3010005C": {
+    "vr": "ST",
+    "Value": [
+      "REPEAT SCAN DUE TO MOTION. RESEARCH PROTOCOL ENROLLMENT VISIT. SEEN BY DR TANAKA."
+    ]
+  },
+  "30100061": {
+    "vr": "UT",
+    "Value": [
+      "PT CLAUSTROPHOBIC SEDATED PER DR REQUEST. PREGNANCY TEST NEGATIVE CONFIRMED BY NURSE. SEEN BY DR OKAFOR."
+    ]
+  },
+  "3010006E": {
+    "vr": "UI",
+    "Value": [
+      "2.25.312424585996530491368549658449496231879"
+    ]
+  },
+  "3010006F": {
+    "vr": "UI",
+    "Value": [
+      "2.25.192389433989663336378555289553587807589"
+    ]
+  },
+  "30100077": {
+    "vr": "LO",
+    "Value": [
+      "RESEARCH PROTOCOL ENROLLMENT VISIT DR LACHANCE"
+    ]
+  },
+  "3010007A": {
+    "vr": "UT",
+    "Value": [
+      "CHRONIC HEADACHES SINCE MVA. PATIENT ARRIVED FROM ER BY WHEELCHAIR. SEEN BY DR TANAKA."
+    ]
+  },
+  "3010007B": {
+    "vr": "UT",
+    "Value": [
+      "PT CLAUSTROPHOBIC SEDATED PER DR REQUEST. CONTRAST ALLERGY PREMEDICATED. SEEN BY DR DUBOIS."
+    ]
+  },
+  "3010007F": {
+    "vr": "UT",
+    "Value": [
+      "RIGHT SHOULDER PAIN AFTER LIFTING. TRANSFERRED FROM OUTSIDE FACILITY. SEEN BY DR FAIRCLOUGH."
+    ]
+  },
+  "30100081": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "0040A121": {
+          "vr": "DA",
+          "Value": [
+            "20190205"
+          ]
+        }
+      }
+    ]
+  },
+  "30100085": {
+    "vr": "TM",
+    "Value": [
+      "023618.032"
+    ]
+  },
+  "40000010": {
+    "vr": "LT",
+    "Value": [
+      "HX OF FALL AT HOME LAST TUESDAY. FOLLOW UP MRI BRAIN W WO CONTRAST. SEEN BY DR MBEKI."
+    ]
+  },
+  "40004000": {
+    "vr": "LT",
+    "Value": [
+      "CHRONIC HEADACHES SINCE MVA. POST OP LEFT KNEE ARTHROPLASTY. SEEN BY DR OKAFOR."
+    ]
+  },
+  "40080040": {
+    "vr": "SH",
+    "Value": [
+      "ORD104890976"
+    ]
+  },
+  "40080042": {
+    "vr": "LO",
+    "Value": [
+      "FOLLOW UP MRI BRAIN W WO CONTRAST DR MARCHETTI"
+    ]
+  },
+  "40080100": {
+    "vr": "DA",
+    "Value": [
+      "19501005"
+    ]
+  },
+  "40080101": {
+    "vr": "TM",
+    "Value": [
+      "030741.868"
+    ]
+  },
+  "40080102": {
+    "vr": "PN",
+    "Value": [
+      {
+        "Alphabetic": "MARCHETTI^ELODIE^GRACE"
+      }
+    ]
+  },
+  "40080108": {
+    "vr": "DA",
+    "Value": [
+      "19451120"
+    ]
+  },
+  "40080109": {
+    "vr": "TM",
+    "Value": [
+      "171117.208"
+    ]
+  },
+  "4008010A": {
+    "vr": "PN",
+    "Value": [
+      {
+        "Alphabetic": "LACHANCE^OWEN^JOHN"
+      }
+    ]
+  },
+  "4008010B": {
+    "vr": "ST",
+    "Value": [
+      "RIGHT SHOULDER PAIN AFTER LIFTING. HX OF FALL AT HOME LAST TUESDAY. SEEN BY DR VOLKOV."
+    ]
+  },
+  "4008010C": {
+    "vr": "PN",
+    "Value": [
+      {
+        "Alphabetic": "IBARRA^HENRIK^JAMES"
+      }
+    ]
+  },
+  "40080111": {
+    "vr": "SQ",
+    "Value": [
+      {}
+    ]
+  },
+  "40080112": {
+    "vr": "DA",
+    "Value": [
+      "19631226"
+    ]
+  },
+  "40080113": {
+    "vr": "TM",
+    "Value": [
+      "231658.531"
+    ]
+  },
+  "40080114": {
+    "vr": "PN",
+    "Value": [
+      {
+        "Alphabetic": "NAKAMURA^TOMASZ^DEAN"
+      }
+    ]
+  },
+  "40080115": {
+    "vr": "LT",
+    "Value": [
+      "R/O PULMONARY EMBOLISM. COMPARE WITH PRIOR OUTSIDE STUDY. SEEN BY DR THORNBURY."
+    ]
+  },
+  "40080118": {
+    "vr": "SQ",
+    "Value": [
+      {}
+    ]
+  },
+  "40080119": {
+    "vr": "PN",
+    "Value": [
+      {
+        "Alphabetic": "ADEYEMI^TOMASZ^RAY"
+      }
+    ]
+  },
+  "4008011A": {
+    "vr": "LO",
+    "Value": [
+      "2071 LINDEN AVE, NORTH TARRANT ME 98748"
+    ]
+  },
+  "40080200": {
+    "vr": "SH",
+    "Value": [
+      "PID537915030"
+    ]
+  },
+  "40080202": {
+    "vr": "LO",
+    "Value": [
+      "PT CLAUSTROPHOBIC SEDATED PER DR REQUEST DR LACHANCE"
+    ]
+  },
+  "40080300": {
+    "vr": "ST",
+    "Value": [
+      "R/O PULMONARY EMBOLISM. CHRONIC HEADACHES SINCE MVA. SEEN BY DR IBARRA."
+    ]
+  },
+  "40084000": {
+    "vr": "ST",
+    "Value": [
+      "CHRONIC HEADACHES SINCE MVA. RESEARCH PROTOCOL ENROLLMENT VISIT. SEEN BY DR LINDQVIST."
+    ]
+  },
+  "50023000": {
+    "vr": "OB",
+    "InlineBinary": "Q0VSVElGSUNBVEUgSVNTVUVEIFRPIElLRUNIVUtXVSBNQVJDSEVUVEkA"
+  },
+  "60023000": {
+    "vr": "OW",
+    "InlineBinary": "U0lHTkVEIEJZIEtXQU1FIE1PUkNPTUJF"
+  },
+  "60024000": {
+    "vr": "LT",
+    "Value": [
+      "RESEARCH PROTOCOL ENROLLMENT VISIT. CONTRAST ALLERGY PREMEDICATED. SEEN BY DR STRAND."
+    ]
+  },
+  "FFFAFFFA": {
+    "vr": "SQ",
+    "Value": [
+      {
+        "04000100": {
+          "vr": "UI",
+          "Value": [
+            "2.25.317396765512639946551999090304730573211"
+          ]
+        }
+      }
+    ]
+  },
+  "FFFCFFFC": {
+    "vr": "OB",
+    "InlineBinary": "REVWSUNFIFNFVFRJTkdTIFBST0ZJTEUgT0YgWVVLSSBLSUxCUklERQ=="
+  }
+}
