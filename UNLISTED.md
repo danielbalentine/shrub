@@ -1,12 +1,28 @@
-# Public tags not listed in Table E.1-1
+# Reference only: public tags outside Table E.1-1
 
-Reference only. Shrub follows PS3.15 Table E.1-1 as written, and these tags are out of scope (see [FEATURES.md](FEATURES.md) section 1.3).
+**Shrub does not use this file.** No code reads it. Shrub leaves every tag listed here unchanged, because Shrub follows PS3.15 Table E.1-1 as written and these tags are not in that table (see [FEATURES.md](FEATURES.md) section 1.3).
 
-During the read of the PS3.6 registry for DICOM 2026d, the reader agents were told to note tags whose names suggested they could hold identifying information. A script took every tag cited in those four reports (562 in all) and kept the 220 that are not keys of `BasicProfileTags` in `src/shrub/_phi_dict.py`. VR, name and retired status come from `src/shrub/_dicom_dict.py`.
+## What these tags are
 
-The Standard does not call these tags identifying. That judgment came from the reader agents, from each tag's name and VR. The groups below were assigned by hand the same way, without checking each tag's definition in PS3.3. About 70 of the 220 are not identifying at all. The list is partial, because it holds only the tags the reader agents cited.
+- Public tags from the PS3.6 registry (DICOM 2026d) that are **not** in Table E.1-1.
+- Picked by AI reader agents during a read of the Standard on 2026-11-19 and 2026-11-20. The agents were told to note tags whose names suggested they *could* hold identifying information.
+- The judgment is the agents', made from each tag's name and VR only. **The Standard does not call these tags identifying.**
+- About 70 of the 220 are not identifying at all, for example Pixel Data and SOP Class UID. The agents cited them for context.
+- The list is partial. It holds only the tags the agents happened to cite, not every unlisted tag.
 
-| Category | Count |
+## What these tags are not
+
+- Not Shrub's PHI list. The tags Shrub acts on are the keys of `BasicProfileTags` and `WildcardTags` in `src/shrub/_phi_dict.py`, generated from Table E.1-1.
+- Not a to-do list or a set of gaps to fix.
+- Not reviewed against each tag's definition in PS3.3. The groups below were assigned by hand from the name and VR.
+
+## How the list was made
+
+A script took every tag cited in the four PS3.6 reader reports (562 in all) and kept the 220 that are not keys of `BasicProfileTags`. VR, name and retired status come from `src/shrub/_dicom_dict.py`.
+
+## Tags by group
+
+| Group | Count |
 |---|---|
 | alt-calendar date | 2 |
 | name or ID | 32 |
@@ -21,7 +37,7 @@ The Standard does not call these tags identifying. That judgment came from the r
 | DICONDE (industrial) | 3 |
 | DICOS (security screening) | 21 |
 
-## Alt-calendar date
+### Alt-calendar date
 
 Patient dates stored with VR LO rather than DA.
 
@@ -30,7 +46,7 @@ Patient dates stored with VR LO rather than DA.
 | (0010,0033) | LO | Patient's Birth Date in Alternative Calendar |  |
 | (0010,0034) | LO | Patient's Death Date in Alternative Calendar |  |
 
-## Name or ID
+### Name or ID
 
 Names of people or devices, and identifiers that point to a person, device or site.
 
@@ -69,7 +85,7 @@ Names of people or devices, and identifiers that point to a person, device or si
 | (300A,0421) | SH | General Accessory ID |  |
 | (3010,001A) | LO | Manufacturer's Model Version |  |
 
-## Free text
+### Free text
 
 Comments, descriptions, labels and reasons.
 
@@ -130,7 +146,7 @@ Comments, descriptions, labels and reasons.
 | (300A,0735) | ST | Treatment Tolerance Violation Identification |  |
 | (4008,0103) | LO | Reference to Recorded Sound | yes |
 
-## URI or address
+### URI or address
 
 URLs, URIs, file names and network addresses.
 
@@ -148,7 +164,7 @@ URLs, URIs, file names and network addresses.
 | (0040,E010) | UR | Retrieve URI |  |
 | (0074,100A) | UR | Contact URI |  |
 
-## Instance UID
+### Instance UID
 
 UIDs of instances, frames of reference or events.
 
@@ -171,7 +187,7 @@ UIDs of instances, frames of reference or events.
 | (300A,0675) | UI | Equipment Frame of Reference UID |  |
 | (3010,001F) | UI | Segmentation Template UID |  |
 
-## Date or time
+### Date or time
 
 Dates and times.
 
@@ -186,7 +202,7 @@ Dates and times.
 | (0014,3076) | DA | Date of Gain Calibration |  |
 | (0014,3077) | TM | Time of Gain Calibration |  |
 
-## Binary
+### Binary
 
 Opaque binary values. Inventory record keys and HPGL documents.
 
@@ -196,7 +212,7 @@ Opaque binary values. Inventory record keys and HPGL documents.
 | (0008,041C) | OB | Prior Record Key |  |
 | (0068,6300) | OB | HPGL Document |  |
 
-## Private pointer
+### Private pointer
 
 Private Creator strings that name private blocks used by Dimension Index and Functional Group pointers. See FEATURES.md 6.7.
 
@@ -205,7 +221,7 @@ Private Creator strings that name private blocks used by Dimension Index and Fun
 | (0020,9213) | LO | Dimension Index Private Creator |  |
 | (0020,9238) | LO | Functional Group Private Creator |  |
 
-## Container
+### Container
 
 Sequences that Table E.1-1 does not list, though it lists some of the attributes inside them.
 
@@ -242,7 +258,7 @@ Sequences that Table E.1-1 does not list, though it lists some of the attributes
 | (300C,0128) | SQ | Beam Hold Originating Device Sequence |  |
 | (3010,0019) | SQ | Author Identification Sequence |  |
 
-## Structural
+### Structural
 
 Not identifying. Examples are Transfer Syntax UID, SOP Class UID, Pixel Data and De-identification Method Code Sequence. Reader agents cited them for context.
 
@@ -287,7 +303,7 @@ Not identifying. Examples are Transfer Syntax UID, SOP Class UID, Pixel Data and
 | (7FE0,0010) | OB or OW | Pixel Data |  |
 | (FFFE,E0DD) | NONE | Sequence Delimitation Item |  |
 
-## DICONDE (industrial)
+### DICONDE (industrial)
 
 Group 0014, industrial non-destructive testing. Unlikely in medical data.
 
@@ -297,7 +313,7 @@ Group 0014, industrial non-destructive testing. Unlikely in medical data.
 | (0014,0105) | ST | Repair ID |  |
 | (0014,602F) | ST | Coil Configuration ID |  |
 
-## DICOS (security screening)
+### DICOS (security screening)
 
 Group 4010, airport security screening. Unlikely in medical data.
 
