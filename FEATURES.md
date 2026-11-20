@@ -39,7 +39,13 @@ The rules come from PS3.15 Annex E. The rest of the Standard (PS3.3, PS3.5, PS3.
 - **Status**: not implemented
 - **Notes**: Identifying data can also be in Private Attributes, new Standard Attributes, Retired Attributes, and attributes used only in Standard Extended SOP Classes. "It is the responsibility of the de-identifier to ensure that all identifying information is removed." The table "is subject to extension as the DICOM Standard evolves", and the Standard suggests handling all DA, DT and TM values by VR rather than only the listed ones. It does not say whether to remove known risks or keep only known-safe data. "De-identification of Private SOP Classes is not defined." Shrub has to decide what to do with a public tag that isn't in Table E.1-1. `TODO.md` already lists this decision.
 
-  The second pass measured the size of the gap. Readers of the PS3.6 registry flagged 562 tags whose names suggest people, organizations, IDs, free text, dates or UIDs. A script checked them against `BasicProfileTags`, and 220 are not in Table E.1-1. Under the Basic Profile alone those 220 pass through unchanged. Examples include Document Author (Trial) (0040,A067, PN, retired), Contact Display Name (0074,100C), Owner ID (2100,0160), Printer Name (2110,0030), Radiation Machine Name (3002,0020), Text Value (0040,A160), Document Title (0042,0010) and about 40 comment and description fields. The 220 tags are flagged by name only. Nobody has reviewed them one by one, so the list shows the size of the gap and is not a removal list.
+  The second pass gave a partial measure of the gap. The PS3.6 readers cited 562 tags. A script found that 220 of them are not in Table E.1-1, and under the Basic Profile alone those 220 pass through unchanged. [UNLISTED.md](UNLISTED.md) lists all 220, grouped by a first-guess category. About 70 of them are not identifying. These are mostly structural values such as Pixel Data and SOP Class UID, plus sequences whose contents the table does list. The rest are a real gap:
+  - Patient's Birth Date in Alternative Calendar (0010,0033) and Patient's Death Date in Alternative Calendar (0010,0034). Both are LO, so a date rule keyed on DA, DT and TM misses them.
+  - 32 names and IDs, such as Document Author (Trial) (0040,A067), Contact Display Name (0074,100C), Owner ID (2100,0160) and Printer Name (2110,0030).
+  - 54 free-text fields, such as Text Value (0040,A160), Document Title (0042,0010) and Dose Comment (3004,0006).
+  - 11 URIs and addresses, 16 instance UIDs not marked `U`, and 8 dates and times.
+
+  The list holds only the tags the readers cited. A full comparison of `DicomDictionary` against `BasicProfileTags` would be complete.
 
 ### 1.4 Conformance Statement content for a de-identifier
 - **Standard**: PS3.15 §E.1.3; PS3.2 §N.1.6 (Table N.1-14), §N.8.4.4 (Table N.8-7), §N.11.2.6 (Table N.11-6)
@@ -656,6 +662,6 @@ These are small issues noticed during the read. None of them has been fixed.
   A second pass then read everything the first pass skipped, in 102 chunks of 1,000 to 4,300 lines. That covered all 20 Parts, including the PS3.6 registry, PS3.3 module tables and PS3.16 code tables. Every reader reported reaching the last line of its chunk. One PS3.14 reader skipped 250 lines, which a script confirmed are display calibration numbers. The second pass found 149 candidate findings. Most were marginal or repeated the first pass. The ones added here are in 1.3, 1.4, 4.5, 6.7, 7.1, 8.8 to 8.10, 15 and 16.
 - **Checks**:
   - Every quote in the first-pass reports (218 findings) was confirmed to appear word for word in the converted text. In the second pass, 148 of 149 quotes matched by script. The remaining one joins two separate quotes, and both were confirmed by hand in PS3.12.
-  - The 220 tags in 1.3 come from comparing reader-flagged PS3.6 tags against `BasicProfileTags` by script.
+  - The 220 tags in 1.3 come from comparing reader-cited PS3.6 tags against `BasicProfileTags` by script. Their categories in `UNLISTED.md` were assigned by hand.
   - Table E.1-1 and Table E.3.10-1 were compared row by row against `_phi_dict.py` and `_safe_private_dict.py` by a script independent of the generator.
   - The action legend, CID 7050, Deidentification Action values and Instance Origin Status were re-checked by hand against the source text.
