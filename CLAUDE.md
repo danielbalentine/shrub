@@ -11,6 +11,9 @@
 2. These files can be built and saved as .json files. Pydicom.from_json() can be used
     to also save them as .dcm files.
 3. The PHI elements will be completely dummy and made up.
+4. PHI test files are initially created as JSON, after review by the director they can be exported to .dcm at runtime.
+5. These test files are built with the purpose of going through integration tests
+6. Canary tests need to act almost as a user...and are just using Shrub and looking for expected output (these are after you have built and deployed your service)
 
 ### The Dicom Standard
 ## General Overview

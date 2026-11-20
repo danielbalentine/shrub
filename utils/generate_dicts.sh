@@ -6,6 +6,7 @@
 #
 # Order matters: generate_phi_dict.py cross-checks its tags against
 # _dicom_dict.py, so the DICOM dictionary is generated first.
+# generate_fixtures.py reads both dicts, so it runs last.
 set -euo pipefail
 
 IMAGE=localhost/shrub-dev
@@ -23,3 +24,4 @@ run() {
 
 run python utils/generate_dicom_dict.py
 run python utils/generate_phi_dict.py
+run python utils/generate_fixtures.py
